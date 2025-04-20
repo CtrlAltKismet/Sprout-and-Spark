@@ -1,0 +1,67 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CSS Variables */
+:root {
+    /* Fonts */
+    --primary-font: 'Lexend', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+  
+    /* Core Colors */
+    --primary-color: #2f5162;        /* steel blue */
+    --secondary-color: #acdff1;      /* soft light blue */
+    --accent-color: #515f6a;         /* muted slate gray */
+  
+    /* Highlights / Alerts */
+    --highlight-color: #bf4e49;      /* warm red */
+    --highlight-color-light: #bc3a2c;/* brighter red */
+    --deep-alert: #702426;           /* deep crimson */
+  
+    /* Warm Tones / Earthy Accents */
+    --warm-accent: #c07a42;          /* light brown / copper */
+    --warm-accent-dark: #a55b2f;     /* medium brown */
+    --warm-accent-deep: #5e2e1d;     /* rich dark brown */
+    --warm-accent-muted: #8a5035;    /* muted clay brown */
+  }
+
+  /* Global styles */
+
+  body{
+    font-family: var(--primary-font);
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  /* Nav Bar Styles */
+
+  #navbar {
+    background-color: var(--secondary-color);
+    font-size: 1.2rem;
+    padding: 1rem 0;
+  }
+
+  /* Style for nav links */
+    #navbar .nav-link {
+    color: var(--primary-color) !important;
+  }
+  
+  /* Optional: Change color on hover */
+  #navbar .nav-link:hover {
+    color: var(--accent-color) !important;
+  }
+
+  /* Style for navbar title and subtitle */
+
+  .site-title {
+    font-weight: 700;
+    font-size: 2.25rem; /*used dev tools to determine size */
+    color: var(--primary-color);
+  }
+  
+  .site-subtitle {
+    font-size: 0.8rem;
+    color: var(--primary-color);
+  }
+  
+

@@ -14,41 +14,59 @@
 
 <body>
     <!-- Navigation using Bootstrap -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="events.html">Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="support.html">Support</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="signup.html">Sign Up</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-          </div>
+    <nav id="navbar" class="navbar navbar-expand-lg">
+      <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
+
+        <!-- Title / Subtitle -->
+        <a class="navbar-brand d-flex flex-column">
+          <span id="site-title" class="site-title">Sprout & Spark</span>
+          <span id="site-subtitle" class="site-subtitle">"Where Little Lights Shine Bright."</span>
+        </a>
+    
+        <!-- Hamburger Icon -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Nav Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="support.html">Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="signup.html">Sign Up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    <header>
-        <h1>Welcome to Sprout and Spark</h1>
+      </div>
+    </nav>
+    
+    <!-- Header with carousel -->
+    <header id="header" class="container section">
+      <div class="row">
+          <div class="col-12 col-xl-6 text-center text-xl-start">
+              <h2 class="display-3">Welcome!</h2>
+              <p class="my-4">To your next workshop!</p>
+          </div>
+       </div>
     </header>
+
     <main>
-        <p>Where Little Lights Shine Bright.</p>
     </main>
     <footer>
         <p>&copy; 2025 Sprout & Spark. All rights reserved.</p>

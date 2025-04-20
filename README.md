@@ -232,6 +232,12 @@ As the website boasts inclusivity for SEN children, it is important to choose a 
 
 ## Wireframes
 
+![Index Page Wireframe](https://github.com/user-attachments/assets/8ccdf390-3c81-4018-9e17-418864cd1bf6)
+![Gallery Page Wireframe](https://github.com/user-attachments/assets/aee6fdfe-9d69-46ec-9f26-7bb84a0dab34)
+![Events Page Wireframe](https://github.com/user-attachments/assets/d88f2683-ee78-4381-a7eb-79d39f04ab11)
+![Support Page Wireframe](https://github.com/user-attachments/assets/7cb457fd-7766-4671-a950-f4ef271c61ef)
+![Sign Up Page Wireframe](https://github.com/user-attachments/assets/e51854bf-7d56-4885-81ac-6f76d1492079)
+
 
 
 ## Technologies Used

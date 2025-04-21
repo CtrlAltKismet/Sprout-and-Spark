@@ -27,10 +27,25 @@
 
   /* Global styles */
 
-  body{
+  body {
     font-family: var(--primary-font);
     box-sizing: border-box;
     position: relative;
+  }
+
+  p {
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    color: var(--primary-color)
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--primary-font);
+    color: var(--primary-color);
+    text-transform: uppercase;
+    text-decoration: bold;
   }
 
   /* Nav Bar Styles */
@@ -39,6 +54,8 @@
     background-color: var(--secondary-color);
     font-size: 1.2rem;
     padding: 1rem 0;
+    overflow: auto;
+    position: sticky;
   }
 
   /* Style for nav links */
@@ -46,7 +63,7 @@
     color: var(--primary-color) !important;
   }
   
-  /* Optional: Change color on hover */
+
   #navbar .nav-link:hover {
     color: var(--accent-color) !important;
   }
@@ -60,15 +77,32 @@
   } */
 
   .site-subtitle {
-    font-size: 2.0rem;
+    font-size: 1.3rem;
     color: var(--primary-color);
   }
 
   /* Style for navbar logo */
 
   #logo {
-    width: 210px; /* Adjusted using Dev tools */
+    width: 170px; /* Adjusted using Dev tools */
     height: auto; 
+    justify-content: center;
+    display: flex;
   } 
   
+  .navbar-brand {
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+  }
 
+/* Hero Image Styles */
+#hero-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px; /*  Adjust this for larger screens using media query */
+    object-fit: cover;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }

@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* CSS Variables */
+
 :root {
     /* Fonts */
     --primary-font: 'Lexend', sans-serif;
@@ -31,6 +32,7 @@
     font-family: var(--primary-font);
     box-sizing: border-box;
     position: relative;
+    background-color: #f7f7f9;
   }
 
   p {
@@ -105,4 +107,14 @@
     object-fit: cover;
     margin-bottom: 1.2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Footer Styles */
+
+  #footer-container {
+    background-color: var(--secondary-color);
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--primary-color);
   }

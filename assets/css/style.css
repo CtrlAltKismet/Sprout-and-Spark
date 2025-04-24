@@ -70,6 +70,23 @@
     color: var(--highlight-color) !important;
   }
 
+  /* Style for nav button */
+
+  .custom-btn {
+    border: 2px transparent solid;
+    color: #acdff1;
+    background-color: var(--primary-color);
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-btn:hover {
+    background-color: var(--highlight-color);
+    color: white;
+    border: 2px transparent solid;
+  }
+
   /* Style for navbar title and subtitle */
 
   /* .site-title {

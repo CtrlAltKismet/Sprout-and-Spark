@@ -130,7 +130,8 @@
   /* Cards Styles */
 
   #workshops {
-    padding: 2rem 0;
+    padding: 2rem;
+    padding-top: 3rem;
     text-align: center;
     font-family: var(--primary-font);
   }
@@ -146,6 +147,8 @@
     justify-content: center;
     gap: 1.5rem;
     margin: 2rem 0;
+    padding-bottom: 1.5rem;
+    padding-top: 1rem;
   }
 
   

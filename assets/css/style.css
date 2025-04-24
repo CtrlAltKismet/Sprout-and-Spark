@@ -132,8 +132,12 @@
   #workshops {
     padding: 2rem;
     padding-top: 3rem;
+    margin-top: 3rem;
     text-align: center;
     font-family: var(--primary-font);
+    background-color: #acdff1;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   #workshops-p {

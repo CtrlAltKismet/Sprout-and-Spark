@@ -103,10 +103,49 @@
 #hero-image {
     width: 100%;
     height: auto;
-    max-height: 500px; /*  Adjust this for larger screens using media query */
+    max-height: 500px; 
     object-fit: cover;
     margin-bottom: 1.2rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Header image and text styles */
+  .header-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1rem; 
+    padding-top: 1.5rem; /* Adjusted using Dev tools */
+  }
+
+  .my-4 {
+    margin: 2rem 0;
+  }
+
+  .text-image-container .col-xl-6:first-child {
+    padding-right: 2rem;
+  }
+  
+
+
+  /* Cards Styles */
+
+  #workshops {
+    padding: 2rem 0;
+    text-align: center;
+    font-family: var(--primary-font);
+  }
+
+  #workshops-p {
+    text-align: center;
+    font-family: var(--primary-font);
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
   }
 
   
@@ -163,3 +202,16 @@
     color: #515f6a;
   }
  
+
+  /* Media Queries */
+
+  /* XL devices (large desktops, 1200px and up) */
+  @media screen and (min-width: 1200px) {
+    #header-title {
+      padding-right: 5rem;
+    }
+  
+    #header-text {
+      padding-right: 5rem;
+    }
+  }

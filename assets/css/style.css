@@ -70,6 +70,14 @@
     color: var(--highlight-color) !important;
   }
 
+  /* Style for navbar hamburger icon */
+
+  #navbar-button {
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+  }
+
   /* Style for nav button */
 
   .custom-btn {
@@ -89,15 +97,10 @@
 
   /* Style for navbar title and subtitle */
 
-  /* .site-title {
-    font-weight: 700;
-    font-size: 2.25rem; /* used dev tools to determine size 
-    color: var(--primary-color);
-  } */
-
   .site-subtitle {
     font-size: 1.3rem;
     color: var(--primary-color);
+    padding-left: 0.5rem;
   }
 
   /* Style for navbar logo */
@@ -122,15 +125,26 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 3rem; /*adjusted using dev tools */
-  }
+    flex-wrap: nowrap; /* stop wrapping onto new line */
+    margin-left: 3rem;
+}
 
-  .search-form input[type="text"] {
+  #search-form .form-inline {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+  #search-form input[type="text"],
+  #search-form input[type="search"] {
     border-radius: 0.5rem;
     padding: 0.5rem;
     border: 2px solid var(--primary-color);
-    width: 200px; /* Adjusted using Dev tools */
-  }
+    flex: 1; /* grow and shrink nicely */
+    min-width: 0; /* prevent overflow */
+}
 
   #search-form-button {
     background-color: var(--primary-color);
@@ -139,12 +153,13 @@
     padding: 0.5rem 1rem;
     border: none;
     cursor: pointer;
-  }
+    flex-shrink: 0; 
+}
 
   #search-form button:hover {
     background-color: var(--highlight-color);
     color: white;
-  }
+}
 
 
 /* Hero Image Styles */
@@ -260,7 +275,29 @@
 
   /* Media Queries */
 
+ 
+  /* Large devices (desktops, 992px and up) */
+  @media screen and (max-width: 992px) {
+    #search-form {
+      position: static;
+      margin: 1rem auto;
+      width: 100%;
+      max-width: 500px; /* optional */
+    }
+  
+    #search-form .form-inline {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 0.5rem;
+    }
+  
+    #search-form-button {
+      width: 100%;
+    }
+  }
+
   /* XL devices (large desktops, 1200px and up) */
+
   @media screen and (min-width: 1200px) {
     #header-title {
       padding-right: 5rem;
@@ -280,4 +317,162 @@
       padding-right: 3rem;
       padding-top: 0rem; /* adjusted using dev tools to reduce size of navbar */
     }
+    
+    #navbar {
+      position: relative;
+    }
+
+    #navbar-button {
+      display: none;
   }
+    #search-form {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 350px;
+  }
+
+    #search-form .form-inline {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+  }
+
+    #search-form input[type="text"],
+    #search-form input[type="search"] {
+      width: 100%;
+      flex: 1;
+      min-width: 0;
+  }
+    #search-form input[type="search"] {
+      width: 450px;
+    }
+
+    #search-form-button {
+      flex-shrink: 0;
+  }
+
+
+/* CSS to fix searchbar overlapping navbar items on landscape ipads */
+
+
+@media screen and (max-width: 1299px) {
+  #search-form {
+    position: static !important;
+    transform: none !important;
+    width: 100%;
+    max-width: 600px;
+    margin: 1rem auto 0 auto;
+    text-align: center;
+    flex: none !important; /* stop it from being treated like a flex item */
+    order: 3;
+  }
+
+  #search-form .form-inline {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  #search-form-button {
+    flex-shrink: 0;
+    width: auto;
+  }
+
+  .container-fluid {
+    display: block !important; /* 💥 This separates all the flex items into block rows */
+    text-align: center;
+  }
+
+  #navbarNav {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .navbar-nav {
+    justify-content: center;
+  }
+}
+
+/* Fix for small laptops / landscape iPads (prevents overlap around 1300px - 1399px) */
+@media screen and (max-width: 1399px) and (min-width: 992px) {
+  #search-form {
+    position: static !important;
+    transform: none !important;
+    width: 100%;
+    max-width: 500px; /* smaller so it fits */
+    margin: 1rem auto;
+    text-align: center;
+    order: 3; /* flow underneath title + nav */
+  }
+
+  .container-fluid {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #navbarNav {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .navbar-nav {
+    justify-content: center;
+  }
+}
+
+/* Restore absolute position again when BIGGER than 1400px */
+
+@media screen and (min-width: 1400px) {
+  #search-form {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 350px;
+    margin: 0;
+  }
+
+  .container-fluid {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .navbar-nav {
+    justify-content: flex-end;
+  }
+}
+
+/* Fix for iPad landscape / small laptop overlap */
+@media screen and (max-width: 1199px) and (min-width: 992px) {
+  #search-form {
+    position: static !important;
+    order: 3;
+    width: 100%;
+    max-width: 600px;
+    margin: 1rem auto 0 auto;
+    text-align: center;
+  }
+
+  #search-form .form-inline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-direction: row;
+  }
+
+  #search-form-button {
+    width: auto;
+    flex-shrink: 0;
+  }
+
+  .navbar .container-fluid {
+    flex-wrap: wrap;
+  }
+}
+
+}

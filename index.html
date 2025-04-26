@@ -25,17 +25,19 @@
         </a>
     
         <!-- Hamburger Icon -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        <button class="navbar-toggler" id="navbar-button" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <!-- Form added from Bootstrap -->
-         <form class="form-inline" id="search-form">
-          <input class="form-control mr-sm-2" type="search" id="searchBar"  placeholder="Search" aria-label="Search">
-          <button type="button" id="search-form-button" class="btn btn-outline-success my-2 my-sm-0" onclick="searchSite(event)">Search</button>
-         </form>
+        <div id="search-form"> 
+          <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" id="searchBar"  placeholder="Search" aria-label="Search">
+            <button type="button" id="search-form-button" class="btn btn-outline-success my-2 my-sm-0" onclick="searchSite(event)">Search</button>
+          </form>
+        </div>
     
         <!-- Nav Links -->
         <div class="collapse navbar-collapse" id="navbarNav">

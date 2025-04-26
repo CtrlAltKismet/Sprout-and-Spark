@@ -259,7 +259,29 @@
     transform: scale(1.05);
 }
 
+/* Gallery text styles */
+
+  #gallery-title {
+    font-size: 4rem; /* Adjusted using Dev tools */
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  #gallery-text {
+    font-size: 1.5rem; /* Adjusted using Dev tools */
+    color: var(--accent-color);
+    text-align: center;
+    margin-bottom: 2rem;
+  }
   
+  #gallery-subtext {
+    font-size: 1.2rem; /* Adjusted using Dev tools */
+    color: var(--accent-color);
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
   /* Footer Styles */
 
   footer {
@@ -397,6 +419,17 @@
       flex-shrink: 0;
   }
 
+/* Hamburger icon fix for mobile devices and smaller ipads */
+
+    @media screen and (max-width: 991px) {
+      #navbar-button {
+        display: block;
+        position: fixed;
+        top: 1rem;
+        right: 2rem;
+        z-index: 999;
+      }
+    }
 
 /* CSS to fix searchbar overlapping navbar items on landscape ipads */
 
@@ -409,7 +442,7 @@
     max-width: 600px;
     margin: 1rem auto 0 auto;
     text-align: center;
-    flex: none !important; /* stop it from being treated like a flex item */
+    flex: none !important; /* prevent flex-grow */
     order: 3;
   }
 
@@ -541,4 +574,5 @@
     max-width: 100% !important;
     display: block !important;
   }
+ 
 }

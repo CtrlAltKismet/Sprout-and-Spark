@@ -378,6 +378,17 @@
     background-color: var(--highlight-color);
   }
 
+  /* Events card titles */
+
+  #card-event-title {
+    padding-top: 1rem;
+  }
+
+  #card-event-subtitle {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
   /* Footer Styles */
 
   footer {

@@ -218,222 +218,46 @@
     padding-top: 1rem;
   }
 
-  /* Gallery Styles CSS from https://workik.com/best-gallery-designs-for-websites-with-html-css-and-javascript */
+  /* Gallery Styles */
 
-  .desktop_2 * {
-    font-family: Nunito, sans-serif;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-  }
-  
-  .desktop_2 button {
-    cursor: pointer;
-  }
-  
-  .desktop_2 img {
-    cursor: pointer;
-  }
-  
-  .desktop_2 img:hover {
-    transform: scale(1.02);
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0s;
-    transition-property: all;
-  }
-  
-  .desktop_2 .hdImg {
-    display: none;
-  }
-  
-  .desktop_2 .btn-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-  }
-  
-  .desktop_2 .project:hover .btn-box {
-    display: block;
-  }
-  
-  .desktop_2 .Container {
-    width: 890px;
-    margin-top: 100px;
-    margin-right: auto;
-    margin-bottom: 50px;
-    margin-left: auto;
-  }
-  
-  .desktop_2 .portfolio {
-    background-image: initial;
-    background-position-x: initial;
-    background-position-y: initial;
-    background-size: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: white;
-    position: relative;
+  .gallery-section {
+    padding: 4rem 2rem;
+    background-color: #f7f7f9;
+}
+
+  .gallery-container {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-  }
-  
-  .desktop_2 .project {
-    position: relative;
-    background-image: initial;
-    background-position-x: initial;
-    background-position-y: initial;
-    background-size: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-  }
-  
-  .desktop_2 .overlay {
-    position: fixed;
-    background-image: initial;
-    background-position-x: initial;
-    background-position-y: initial;
-    background-size: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: rgba(71, 69, 69, 0.7);
-    height: 100%;
+    gap: 1rem;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+  .gallery-item {
+    flex: 1 1 calc(33.333% - 1rem);
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+  .gallery-item img {
     width: 100%;
-    max-height: 100%;
-    top: 0px;
-    left: 0px;
-    z-index: 100;
-    display: none;
-    padding-top: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-  }
-  
-  .desktop_2 .overlay-inner {
-    top: 50%;
-    right: 0px;
-    bottom: 0px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-image: initial;
-    background-position-x: initial;
-    background-position-y: initial;
-    background-size: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: white;
-    max-width: 700px;
-    width: fit-content;
-    padding-top: 35px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    position: relative;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    opacity: 1;
-    max-width: 50%;
-    max-height: 85%;
-  }
-  
-  .desktop_2 .close {
-    position: absolute;
-    top: 9px;
-    right: 15px;
-    background-image: none;
-    background-position-x: initial;
-    background-position-y: initial;
-    background-size: initial;
-    background-attachment: initial;
-    background-origin: initial;
-    background-clip: initial;
-    background-color: initial;
-    outline-color: initial;
-    outline-style: initial;
-    outline-width: 0px;
-    color: #474545;
-    border-top-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    border-left-width: 0px;
-    border-top-style: initial;
-    border-right-style: initial;
-    border-bottom-style: initial;
-    border-left-style: initial;
-    border-top-color: initial;
-    border-right-color: initial;
-    border-bottom-color: initial;
-    border-left-color: initial;
-    border-image-source: initial;
-    border-image-slice: initial;
-    border-image-width: initial;
-    border-image-outset: initial;
-    border-image-repeat: initial;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  
-  .desktop_2 .overlay-inner .hdImgs {
-    width: fit-content;
-    height: calc(80% - 55px);
-    display: flex;
-  }
-  
-  .desktop_2 .overlay-inner img {
-    max-height: 100%;
-    max-width: 100%;
-    transform: none;
-  }
-  
-  .desktop_2 .bigImg {
-    width: 665px;
-    height: 440px;
-    margin-top: 0px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    border-bottom-left-radius: 6px;
-  }
-  
-  .desktop_2 .project-image {
-    height: 215px;
-    width: 215px;
-    margin-top: 0px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
-    border-bottom-right-radius: 6px;
-    border-bottom-left-radius: 6px;
-  }
-  
-  .desktop_2 .above {
-    display: flex;
-  }
-  
-  .desktop_2 .bottom {
-    display: flex;
-    justify-content: space-around;
-  }
-  
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
 
+  .gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
 
-
+  .gallery-item img:hover {
+    transform: scale(1.05);
+}
 
   
   /* Footer Styles */
@@ -521,7 +345,7 @@
     #header-title {
       padding-right: 5rem;
     }
-  
+  }
     #header-text {
       padding-right: 5rem;
     }
@@ -603,7 +427,7 @@
   }
 
   .container-fluid {
-    display: block !important; /* 💥 This separates all the flex items into block rows */
+    display: block !important; 
     text-align: center;
   }
 
@@ -618,6 +442,7 @@
 }
 
 /* Fix for small laptops / landscape iPads (prevents overlap around 1300px - 1399px) */
+
 @media screen and (max-width: 1399px) and (min-width: 992px) {
   #search-form {
     position: static !important;
@@ -694,151 +519,26 @@
   }
 }
 
-/* Media Query for image gallery taken from https://workik.com/best-gallery-designs-for-websites-with-html-css-and-javascript */
-@media (max-width: 1024px) {
-  .desktop_2 .project-image {
-    width: 165px;
-    height: 165px;
-  }
+/* Gallery responsive breakpoints */
 
-  .desktop_2 .Container {
-    width: 690px;
-    margin-top: 80px;
-    margin-right: auto;
-    margin-bottom: 50px;
-    margin-left: auto;
-  }
-
-  .desktop_2 .bigImg {
-    width: 515px;
-    height: 340px;
+@media screen and (max-width: 1024px) {
+  .gallery-item {
+    flex: 1 1 calc(50% - 1rem);
   }
 }
 
-@media (max-width: 768px) {
-  .desktop_2 .project {
-    width: 220px;
-    display: inline-block;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
+@media screen and (max-width: 600px) {
+  .gallery-container {
+    display: block !important;
+    width: 90%;
+    margin: 0 auto;
   }
 
-  .desktop_2 .project-first {
-    width: 450px;
+  .gallery-item {
+    width: 100% !important;
+    margin-bottom: 1rem;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    display: block !important;
   }
-
-  .desktop_2 .above {
-    flex-direction: column;
-  }
-
-  .desktop_2 .portfolio {
-    justify-content: flex-start;
-  }
-
-  .desktop_2 .Container {
-    width: 450px;
-  }
-
-  .desktop_2 .bigImg {
-    width: 450px;
-  }
-
-  .desktop_2 .project-image {
-    width: 220px;
-    height: 200px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-    display: inline-block;
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-  }
-
-  .desktop_2 .side {
-    display: flex;
-    width: 450px;
-    justify-content: space-between;
-  }
-
-  .desktop_2 .bottom {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
-  }
-
-  .desktop_2 .project-image.last {
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 10px;
-    margin-left: 5px;
-  }
-
-  .desktop_2 .project-image.last {
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-  }
-}
-
-@media (max-width: 500px) {
-  .desktop_2 .bigImg {
-    width: 250px;
-    height: 200px;
-  }
-
-  .desktop_2 .project {
-    width: 110px;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 20px;
-    margin-left: 0px;
-  }
-
-  .desktop_2 .Container {
-    width: 250px;
-    margin-top: 80px;
-    margin-right: auto;
-    margin-bottom: 50px;
-    margin-left: auto;
-  }
-
-  .desktop_2 .project-image {
-    width: 110px;
-    height: 110px;
-  }
-
-  .desktop_2 .side {
-    flex-direction: row;
-    width: 250px;
-  }
-
-  .desktop_2 .project-image.last {
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-  }
-
-  .desktop_2 .project.last-project {
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 30px;
-  }
-
-  .desktop_2 .project-first {
-    width: 250px;
-  }
-
-  .desktop_2 .overlay-inner {
-    max-width: 90%;
-  }
-}
 }

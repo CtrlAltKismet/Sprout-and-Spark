@@ -299,20 +299,20 @@
 
   /* Events Cards Styles */
 
+  
   .events-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
-  }
+}
 
   .event-card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -320,12 +320,19 @@
     text-align: center;
     transition: transform 0.3s ease;
     width: 300px;
-    padding-bottom: 1rem; 
-  }
+    min-height: 580px;
+    position: relative;
+}
 
   .event-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }
+
+  .event-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
   }
 
   .toggle-button {
@@ -334,31 +341,60 @@
     border: none;
     padding: 0.6rem 1.2rem;
     border-radius: 5px;
-    margin-bottom: 1rem;
-    cursor: pointer;
+    margin-top: auto; 
     font-family: var(--primary-font);
     font-size: 1rem;
     transition: background-color 0.3s ease;
-  }
+    cursor: pointer;
+}
   
   .toggle-button:hover {
     background-color: var(--highlight-color);
   }
 
   .event-more-text {
-    display: none;
     padding: 0 1rem 1rem 1rem;
     font-size: 0.95rem;
     color: #333;
   }
   
-  .event-more-text.show-text {
-    display: block;
-  }
+  .event-more-wrapper {
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 5;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.event-more-wrapper.show-text {
+    max-height: 1000px; 
+    opacity: 1;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+  width: 300px;
+  min-height: 580px;
+}
+
   
   .book-now-container {
     text-align: center;
     margin: 2rem 0;
+    width: 100%;
   }
   
   .book-now-button {

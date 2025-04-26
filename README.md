@@ -7,7 +7,7 @@
 - [User Stories](#user-stories)
 - [Design Choices](#design-choices)
 - [Wireframes](#wireframes)
-- [Technologies User](#technologies-used)
+- [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Deployment](#deployment)
 - [Future Features](#future-features)
@@ -216,18 +216,28 @@ As the website boasts inclusivity for SEN children, it is important to choose a 
 - **Lexend** - Primary font, chosen for its accessibility and readability benefits.
 - **Roboto** - Backup font for modern, clean support.
 
+Fonts for headers and navbar links have been either put in bold or capitalised to enhance readability, with suitable spacing within the navbar to ensure all components can be easily read and understood with younger eyes.
+
 ### Colour Palette
+
+Not all colours have been used but were taken from the hero image for selective choice. Mostly the light blue, dark blue and red highlight colours were chosen and the plain white background suited the light blue nav bar and divs on each page. This choice makes the website look professional, readable and child friendly as it remains vibrant and eye-catching. Furthermore, keeping the colour palette to a minimum ensures it appeals to individuals who may experience some colour-blindness and ensures text is not lost, keeping it high contrast.
 
 - Soft, friendly colours chosen to be welcoming and sensory-considerate.
 - High contrast for readability, without stimulaton.
+- ![image](https://github.com/user-attachments/assets/835e8f8d-a4e7-41db-8f22-85f0d89628e4)
+
 
 ### Layout & Components
 
-- Card layout for workshop previews.
-- Accesible navigation bar with hover over each link to encourage further readability.
+- Card layout for workshop previews on index page, with images to show the user what the room layout will look like on entering the premises.
+- Accesible navigation bar with search bar so users are able to search on the current webpage or other webpages within the website.
 - Expandable/collapsible cards for workshop information.
 - Large buttons and touch-friendly elements for mobile and tablet users.
-
+- Hovering over nav links and buttons changes the colour to red so the user is aware they are on the correct link. The hover transitions over 0.3 seconds so it is not too jarring.
+- Many pictures have been placed throughout the index page to keep it as eye catching as possible and keep it user friendly for younger audiences.
+- Text has large gaps between each section to ensure readability for audiences with dyslexia/Irlens.
+- A logo has been used instead of text in the navbar as images are much more recognisable and users can immediately recognise the company.
+ 
 ---
 
 ## Wireframes

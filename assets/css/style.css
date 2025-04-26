@@ -116,6 +116,37 @@
     display: flex;
   }
 
+/* Style for search form */
+
+  #search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem; /*adjusted using dev tools */
+  }
+
+  .search-form input[type="text"] {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    border: 2px solid var(--primary-color);
+    width: 200px; /* Adjusted using Dev tools */
+  }
+
+  #search-form-button {
+    background-color: var(--primary-color);
+    color: #acdff1;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+  }
+
+  #search-form button:hover {
+    background-color: var(--highlight-color);
+    color: white;
+  }
+
+
 /* Hero Image Styles */
 #hero-image {
     width: 100%;
@@ -237,5 +268,16 @@
   
     #header-text {
       padding-right: 5rem;
+    }
+
+    .site-subtitle {
+      float: left;
+      margin-left: 0rem; /* adjusted using dev tools */
+      padding-bottom: 0rem;
+    }
+
+    .logo {
+      padding-right: 3rem;
+      padding-top: 0rem; /* adjusted using dev tools to reduce size of navbar */
     }
   }

@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-     <!-- Navigation using Bootstrap -->
-     <nav id="navbar" class="navbar navbar-expand-lg">
+    <!-- Navigation using Bootstrap -->
+    <nav id="navbar" class="navbar navbar-expand-lg">
       <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
 
         <!-- Title / Subtitle -->
@@ -41,7 +41,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active"  href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="gallery.html">Gallery</a>
@@ -53,30 +53,93 @@
               <a class="nav-link" href="support.html">Support</a>
             </li>
             <li class="nav-item">
-              <a id="custom-btn" class="custom-btn btn btn-primary" href="signup.html">Sign Up</a>
+              <a id="custom-btn" class="custom-btn btn btn-primary" aria-current="page" href="signup.html">Sign Up</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <header>
-        <h1>Sign Up to our next workshop!</h1>
-    </header>
+    <!-- Header section with title and subtitle reused from gallery.html to keep styles -->
+    <header class="booking-header">
+      <div class="header-content">
+        <h1 class="text-center" id="gallery-title">Time to Get Creative -- Book Now!</h1>
+        <p class="text-center" id="gallery-text">Our workshops are designed to spark creativity, build skills, and create wonderful memories. Book your place today!</p>
+      </div>
 
+      <!-- Booking form -->
     <main>
-        <p>Where Little Lights Shine Bright.</p>
-    </main>
+      <div class="booking-container">
+      <form class="booking-form" action="success.html" method="GET">
+        <h2>Book a Workshop</h2>
     
-    <footer>
-        <p>&copy; 2025 Sprout & Spark. All rights reserved.</p>
-    </footer>
+        <div class="form-group">
+          <label for="first-name">First Name *</label>
+          <input type="text" id="first-name" name="first-name" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="last-name">Last Name *</label>
+          <input type="text" id="last-name" name="last-name" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="workshop">Select Workshop *</label>
+          <select id="workshop" name="workshop" required>
+            <option value="">-- Please choose an option --</option>
+            <option value="painting">Painting Workshop (6+)</option>
+            <option value="drawing">Drawing Workshop (6+)</option>
+            <option value="textiles">Textiles Workshop (8+)</option>
+            <option value="woodwork">Woodwork Workshop (10+)</option>
+            <option value="clay-modelling">Clay Modelling Workshop (6+)</option>
+            <option value="sensory-music">Sensory Music and Movement Workshop (6+)</option>
+          </select>
+        </div>
+     
+    
+        <button type="submit">Submit Booking</button>
+      </form>
+      </div>
+    </main>
+
+        <!-- Footer with links to web pages and social media links -->
+        <footer>
+            <div class="footer-container" id="footer-container">
+              <div class="footer-links" id="footer-links">
+                <a href="aboutus.html">About Us</a>
+                <a href="contactus.html">Contact</a>
+                <a href="FAQs.html">FAQs</a>
+                <a href="Reviews.html">Reviews</a>
+                <a href="Fundraise.html">Fundraise</a>
+                <a href="feedback.html">Feedback</a>
+              </div>
+              <div id="social-media" class="social-media">
+                <a href="https://www.instagram.com/sproutandspark/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/sproutandspark/" target="_blank" class="social-icon"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/sproutandspark" target="_blank" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/company/sproutandspark/" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+              <p class="footer-credit">&copy; 2025 Sprout & Spark. All rights reserved.</p>
+            </div>
+        </footer>
 
     <!-- Bootstrap JS -->    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/97218d7df3.js" crossorigin="anonymous"></script>
+
+
 
 </body>
 </html>

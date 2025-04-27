@@ -60,14 +60,56 @@
       </div>
     </nav>
 
-   <!-- Header section -->
-    <header>
-        <h1>Upcoming Events</h1>
-    </header>
+    <!-- Header section with title and subtitle reused from gallery.html to keep styles -->
+    <header class="booking-header">
+      <div class="header-content">
+        <h1 class="text-center" id="gallery-title">Time to Get Creative -- Book Now!</h1>
+        <p class="text-center" id="gallery-text">Our workshops are designed to spark creativity, build skills, and create wonderful memories. Book your place today!</p>
+      </div>
 
-      <!-- Booking form for events taken from Bootstrap -->
+      <!-- Booking form -->
     <main>
-        <p>Where Little Lights Shine Bright.</p>
+      <div class="booking-container">
+      <form class="booking-form" action="success.html" method="GET">
+        <h2>Book a Workshop</h2>
+    
+        <div class="form-group">
+          <label for="first-name">First Name *</label>
+          <input type="text" id="first-name" name="first-name" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="last-name">Last Name *</label>
+          <input type="text" id="last-name" name="last-name" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+    
+        <div class="form-group">
+          <label for="workshop">Select Workshop *</label>
+          <select id="workshop" name="workshop" required>
+            <option value="">-- Please choose an option --</option>
+            <option value="painting">Painting Workshop (6+)</option>
+            <option value="drawing">Drawing Workshop (6+)</option>
+            <option value="textiles">Textiles Workshop (8+)</option>
+            <option value="woodwork">Woodwork Workshop (10+)</option>
+            <option value="clay-modelling">Clay Modelling Workshop (6+)</option>
+            <option value="sensory-music">Sensory Music and Movement Workshop (6+)</option>
+          </select>
+        </div>
+     
+    
+        <button type="submit">Submit Booking</button>
+      </form>
+      </div>
     </main>
 
         <!-- Footer with links to web pages and social media links -->

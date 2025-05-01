@@ -748,6 +748,37 @@ textarea {
   margin-top: 0.5rem;
 }
 
+/* FAQs Section */
+
+.faq-section {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.accordion-body {
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  color: var(--accent-color);
+}
+
+.accordion-item {
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
 
   /* Footer Styles */
 
@@ -804,7 +835,7 @@ textarea {
  
 
 
-
+  
   /* Media Queries */
 
  

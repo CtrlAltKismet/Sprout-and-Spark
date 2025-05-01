@@ -750,6 +750,11 @@ textarea {
 
 /* FAQs Section */
 
+#faq-header {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
 .faq-section {
   background-color: #ffffff;
   border-radius: 1rem;

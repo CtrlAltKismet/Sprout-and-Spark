@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* CSS Variables */
-
 :root {
     /* Fonts */
     --primary-font: 'Lexend', sans-serif;
@@ -27,7 +26,6 @@
   }
 
   /* Global styles */
-
   html, body {
     height: 100%;
   }
@@ -66,7 +64,6 @@
   }
 
   /* Nav Bar Styles */
-
   #navbar {
     background-color: var(--secondary-color);
     font-size: 1.2rem;
@@ -86,7 +83,6 @@
   }
 
   /* Style for navbar hamburger icon */
-
   #navbar-button {
     position: fixed;
     top: 1rem;
@@ -94,7 +90,6 @@
   }
 
   /* Style for nav button */
-
   .custom-btn {
     border: 2px transparent solid;
     color: #acdff1;
@@ -111,15 +106,13 @@
   }
 
   /* Style for navbar title and subtitle */
-
   .site-subtitle {
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: var(--primary-color);
     padding-left: 0.5rem;
   }
 
   /* Style for navbar logo */
-
   #logo {
     width: 170px; /* Adjusted using Dev tools */
     height: auto; 
@@ -135,7 +128,6 @@
   }
 
 /* Style for search form */
-
   #search-form {
     display: flex;
     align-items: center;
@@ -203,10 +195,7 @@
     padding-right: 2rem;
   }
   
-
-
   /* Cards Styles */
-
   #workshops {
     padding: 2rem;
     padding-top: 3rem;
@@ -234,7 +223,6 @@
   }
 
   /* Gallery Styles */
-
   .gallery-section {
     padding: 4rem 2rem;
     background-color: #f7f7f9;
@@ -275,7 +263,6 @@
 }
 
 /* Gallery text styles */
-
   #gallery-title {
     font-size: 4rem; /* Adjusted using Dev tools */
     color: var(--primary-color);
@@ -299,8 +286,6 @@
   }
 
   /* Events Cards Styles */
-
-  
   .events-container {
     display: flex;
     flex-wrap: wrap;
@@ -416,7 +401,6 @@
   }
 
 /* Events card titles */
-
   #card-event-title {
     padding-top: 1rem;
   }
@@ -427,7 +411,6 @@
   }
 
 /* Booking Form Styles */
-
   .booking-container {
     display: flex;
     justify-content: center;
@@ -552,9 +535,6 @@
     background-color: var(--warm-accent-dark);
 }
 
-
-/* Support Page Styles */
-
 /* Support Page Styles */
 .support-links, .contact-us {
   padding: 60px 20px;
@@ -668,7 +648,6 @@ textarea {
 }
 
 /* About Us Page Header */
-
 .about-header {
   padding: 4rem 2rem;
   text-align: center;
@@ -691,7 +670,6 @@ textarea {
 }
 
 /* Team Section */
-
 #about-us {
   padding: 4rem 2rem;
   background-color: #f7f7f9; 
@@ -749,7 +727,6 @@ textarea {
 }
 
 /* FAQs Section */
-
 #faq-header {
   padding: 4rem 2rem;
   text-align: center;
@@ -786,7 +763,6 @@ textarea {
 }
 
   /* Footer Styles */
-
   footer {
     background-color: #acdff1;
     padding: 2rem 1rem;
@@ -837,13 +813,8 @@ textarea {
     margin-top: 1rem;
     color: #515f6a;
   }
- 
 
-
-  
   /* Media Queries */
-
- 
   /* Large devices (desktops, 992px and up) */
   @media screen and (max-width: 992px) {
     #search-form {
@@ -865,15 +836,11 @@ textarea {
   }
 
   /* XL devices (large desktops, 1200px and up) */
-
   @media screen and (min-width: 1200px) {
     #header-title {
       padding-right: 5rem;
     }
   }
-    #header-text {
-      padding-right: 5rem;
-    }
 
     .site-subtitle {
       float: left;
@@ -915,7 +882,7 @@ textarea {
       min-width: 0;
   }
     #search-form input[type="search"] {
-      width: 450px;
+      width: 220px;
     }
 
     #search-form-button {
@@ -923,7 +890,6 @@ textarea {
   }
 
 /* Hamburger icon fix for mobile devices and smaller ipads */
-
     @media screen and (max-width: 991px) {
       #navbar-button {
         display: block;
@@ -935,8 +901,6 @@ textarea {
     }
 
 /* CSS to fix searchbar overlapping navbar items on landscape ipads */
-
-
 @media screen and (max-width: 1299px) {
   #search-form {
     position: static !important;
@@ -978,7 +942,6 @@ textarea {
 }
 
 /* Fix for small laptops / landscape iPads (prevents overlap around 1300px - 1399px) */
-
 @media screen and (max-width: 1399px) and (min-width: 992px) {
   #search-form {
     position: static !important;
@@ -1006,7 +969,6 @@ textarea {
 }
 
 /* Restore absolute position again when BIGGER than 1400px */
-
 @media screen and (min-width: 1400px) {
   #search-form {
     position: absolute;
@@ -1056,7 +1018,6 @@ textarea {
 }
 
 /* Gallery responsive breakpoints */
-
 @media screen and (max-width: 1024px) {
   .gallery-item {
     flex: 1 1 calc(50% - 1rem);
@@ -1077,5 +1038,4 @@ textarea {
     max-width: 100% !important;
     display: block !important;
   }
- 
 }

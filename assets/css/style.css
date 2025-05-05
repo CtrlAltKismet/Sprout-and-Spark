@@ -637,7 +637,8 @@ textarea {
 }
 
 .submit-button:hover {
-  background-color: var(--warm-accent-dark);
+  background-color: var(--highlight-color) !important;
+  color: white !important;
 }
 
 /* About Us Page Header */

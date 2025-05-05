@@ -15,14 +15,7 @@
   
     /* Highlights / Alerts */
     --highlight-color: #bf4e49;      /* warm red */
-    --highlight-color-light: #bc3a2c;/* brighter red */
-    --deep-alert: #702426;           /* deep crimson */
-  
-    /* Warm Tones / Earthy Accents */
-    --warm-accent: #c07a42;          /* light brown / copper */
-    --warm-accent-dark: #a55b2f;     /* medium brown */
-    --warm-accent-deep: #5e2e1d;     /* rich dark brown */
-    --warm-accent-muted: #8a5035;    /* muted clay brown */
+
   }
 
   /* Global styles */

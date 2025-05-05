@@ -808,6 +808,29 @@ textarea {
     color: #515f6a;
   }
 
+  /*Social Media Icons*/
+  /* Social Media Icon Styles */
+#social-media {
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* space between icons */
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-icon {
+  font-size: 2rem; /* larger icons */
+  color: var(--primary-color); /* use your dark primary color */
+  font-weight: bold;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-icon:hover {
+  color: var(--highlight-color); /* red on hover */
+  transform: scale(1.2); /* subtle zoom on hover */
+}
+
+
   /* Media Queries */
   /* Large devices (desktops, 992px and up) */
   @media screen and (max-width: 992px) {

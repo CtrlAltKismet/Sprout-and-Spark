@@ -53,7 +53,7 @@
     font-family: var(--primary-font);
     color: var(--primary-color);
     text-transform: uppercase;
-    text-decoration: bold;
+    font-weight: bold;
   }
 
   /* Nav Bar Styles */

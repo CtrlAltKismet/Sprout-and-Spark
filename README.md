@@ -1,4 +1,11 @@
-﻿﻿# Sprout-and-Spark
+# Sprout & Spark
+
+This fictional website is designed for children and their families to find creative and interesting workshops for their SEN children to attend, socialise, create and be a part of a safe space for all their learning needs. 
+
+Required: HTML, CSS 
+Optional: Bootstrap, favicon and other custom CSS libraries.
+
+Please visit the deployed website [here](https://ctrlaltkismet.github.io/Sprout-and-Spark/) on github pages.
 
 ## Contents
 

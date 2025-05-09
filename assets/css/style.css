@@ -76,11 +76,11 @@
   }
 
   /* Style for navbar hamburger icon */
-  #navbar-button {
+ /* #navbar-button {
     position: fixed;
     top: 1rem;
     right: 2rem;
-  }
+  } */
 
   /* Style for nav button */
   .custom-btn {
@@ -874,9 +874,6 @@ textarea {
       position: relative;
     }
 
-    #navbar-button {
-      display: none;
-  }
     #search-form {
       position: absolute;
       left: 50%;
@@ -907,8 +904,8 @@ textarea {
   }
 
 /* Hamburger icon fix for mobile devices and smaller ipads */
-    @media screen and (max-width: 991px) {
-      #navbar-button {
+    @media screen and (max-width: 1399px) {
+      .navbar-toggler {
         display: block;
         position: fixed;
         top: 1rem;

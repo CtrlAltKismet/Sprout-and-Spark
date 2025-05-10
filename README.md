@@ -34,13 +34,12 @@ Please visit the deployed website [here](https://ctrlaltkismet.github.io/Sprout-
   - [User Stories Check](#user-stories-check)
   - [Testing on Other Devices](#testing-on-other-devices)
   - [Testing on Other Browsers](#testing-on-other-browsers)
-  - [Dev Tools](#dev-tools)
-  - 
+    
 - [Django Functionality](#django-functionality)
-  -[Models](#models)
-  -[Views](#views)
-  -[Templates](#templates)
-  -[Summary](#summary)
+  - [Models](#models)
+  - [Views](#views)
+  - [Templates](#templates)
+  - [Summary](#summary)
   
 - [Technologies Used](#technologies-used)
 
@@ -633,27 +632,33 @@ Any lighthouse corrections made for performance was mostly due to the image size
 
 Index page:
 ![image](https://github.com/user-attachments/assets/726d395d-2031-4f29-856d-67a5f144b479)
-
+<br>&nbsp;
 Gallery page after changing images from PNG to JPG and resizing:
 ![image](https://github.com/user-attachments/assets/a911437b-d0d6-4c96-bbd6-6761dd70f3f8)
-
+<br>&nbsp;
 Events page after resizing images:
 ![image](https://github.com/user-attachments/assets/5e34fadb-ab81-47dc-b0c1-b843a240755e)
+<br>&nbsp;
 
 Support page:
 ![image](https://github.com/user-attachments/assets/eaf8ff3b-534f-4a03-aeb8-6a019a8fbf3f)
+<br>&nbsp;
 
 Sign up page:
 ![image](https://github.com/user-attachments/assets/306d7fda-e91c-4350-9d35-76033ad3afcd)
+<br>&nbsp;
 
 About us page:
 ![image](https://github.com/user-attachments/assets/38fbb0ec-e159-473c-be76-d6ce792fb8be)
+<br>&nbsp;
 
 FAQs page:
 ![image](https://github.com/user-attachments/assets/c3a0ba9c-18c7-4706-a547-1f99fe816381)
+<br>&nbsp;
 
 Reviews page:
 ![image](https://github.com/user-attachments/assets/29dd68df-4bab-4e21-b7f9-125b8e1ed6e5)
+<br>&nbsp;
 
 Fundraising page:
 ![image](https://github.com/user-attachments/assets/45ef8952-70a7-4ae3-a01e-0c4932715792)
@@ -678,21 +683,21 @@ To validate my code, I used W3C Markup Validation for my HTML code and the W3C C
 ### HTML Validation
 
 Index page:
-The index page came back with 5 errors and 2 warnings, mostly due to duplicate ID's which were fixed by removing and instead using classes -- the custom CSS was also modified to reflect these changes. <section> was also changed to <div> as suggested by the validator.
+The index page came back with 5 errors and 2 warnings, mostly due to duplicate ID's which were fixed by removing and instead using classes -- the custom CSS was also modified to reflect these changes. Section was also changed to div as suggested by the validator.
 ![image](https://github.com/user-attachments/assets/3957e298-2061-462e-ac8d-1465fa0e6068)
 
 After changes were made, there were no more errors:
 ![image](https://github.com/user-attachments/assets/2d247b47-fdf3-48d5-a49d-e28b4aba665d)
 
 Gallery page:
-The gallery page came with just 2 errors and 1 warning, which was due to unclosed elements and a section lacking a heading. I used the same <div> fix as before to ensure all elements were closed.
+The gallery page came with just 2 errors and 1 warning, which was due to unclosed elements and a section lacking a heading. I used the same div fix as before to ensure all elements were closed.
 ![image](https://github.com/user-attachments/assets/9619bba7-fa4f-42ad-8b1b-4d7e11291fd2)
 
 After changes were made, there were no more errors:
 ![image](https://github.com/user-attachments/assets/a6287c3f-fb9d-4352-95ee-ac5454b7dcc6)
 
 Events page:
-The events page showed a total of 26 errors including: the main element must not appear as a descendent of the header element (fixed by moving <main> from beneath the header to above it) duplicate IDs (removed), the end tag <section> seen but a <div> element was still open (closed element with another </div>) and a </header> missing before my <section> which was promptly added.
+The events page showed a total of 26 errors including: the main element must not appear as a descendent of the header element (fixed by moving main from beneath the header to above it) duplicate IDs (removed), the end tag section seen but a div element was still open (closed element with another div) and a header missing before my section which was promptly added.
 ![image](https://github.com/user-attachments/assets/e2ba00e7-c864-49f7-b22b-2f8ef6a4929a)
 
 After changes were made, there were no more errors:
@@ -915,7 +920,7 @@ Open `index.html` in your browser to run locally.
 
 ## Deployment
 
-Deployed via GitHub Pages:
+Deployed via GitHub Pages: [Sprout&Spark Homepage](https://ctrlaltkismet.github.io/Sprout-and-Spark/index.html)
 
 ---
 

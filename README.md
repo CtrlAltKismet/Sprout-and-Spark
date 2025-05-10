@@ -12,22 +12,42 @@ Please visit the deployed website [here](https://ctrlaltkismet.github.io/Sprout-
 
 ## Contents
 
-- [UX/UI](#uxui)
-- [Strategy](#strategy)
+- [UX and UI](#ux-and-ui)
+  - [Project Goals](#project-goals)
+  - [Player Goals](#player-goals)
+  - [Parental Goals](#parental-goals)
+  - [Developer and Business Goals](#developer-and-business-goals)
+  - [Strategy](#strategy)
+  - [User Stories](#user-stories)
+  - [Site Structure](#site-structure)
+  - [Wireframes](#wireframes)
+  - [Design Choices](#design-choices)
+  - [Layout and Components](#layout-and-components)
+
 - [Features](#features)
-- [User Stories](#user-stories)
-- [Site Structure](#site-structure)
-- [Wireframes](#wireframes)
-- [Design Choices](#design-choices)
+- [Mock Ups](#mock-ups)
+
+- [Testing](#testing)
+  - [Lighthouse](#lighthouse)
+  - [Contrast](#contrast)
+  - [Validation](#validation)
+  - [User Stories Check](#user-stories-check)
+  - [Testing on Other Devices](#testing-on-other-devices)
+  - [Testing on Other Browsers](#testing-on-other-browsers)
+  - [Dev Tools](#dev-tools)
+
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Deployment](#deployment)
 - [Future Features](#future-features)
 - [Credits](#credits)
 
+
+
 ---
 
-## UX/UI
+## UX and UI
+
 
 ### Project Goals
 
@@ -78,19 +98,6 @@ The fictional organisers behind Sprout & Spark would find this website valuable 
 
 The main audience includes parents and carers of children with SEN, educators, and community supporters who wish to learn more, get involved, or donate to help sustain the service.
 
-## Features
-
-- Accessible navigation on all pages.
-- Visual, engaging workshops listings.
-- SEN support information for each activity.
-- Easy-to-use booking form.
-- Fully mobile and tablet responsive.
-- Alt-text for all images.
-- Fonts optimized for readability.
-- A complementative colour pallete across all web pages.
-- Links to external websites for further support for families.
-- A gallery updated after each event to encourage website engagement.
-- Links to social media for further visual content such as photos and videos.
 
 ---
 
@@ -352,15 +359,13 @@ The hero image used is where the primary colour of light blue comes from, using 
 
 On desktop:
 ![image](https://github.com/user-attachments/assets/9dd9b0ba-e179-463c-a545-044051b1e5ee)
-
-
-
+<br>&nbsp;
 On tablet:
+
 ![image](https://github.com/user-attachments/assets/b5fee6ae-7b83-42e7-8b73-c615d1c86dac)
-
-
-
+<br>&nbsp;
 On mobile:
+
 ![image](https://github.com/user-attachments/assets/dc0daf1a-3d63-4503-a527-ec6afe571dd6)
 
 ## Introduction
@@ -369,13 +374,13 @@ The introduction on this page includes another image on the right hand side alon
 
 On desktop:
 ![image](https://github.com/user-attachments/assets/82016b4e-5b2a-47a3-9073-e02e1b92a97b)
-
-
+<br>&nbsp;
 On tablet:
+
 ![image](https://github.com/user-attachments/assets/84251776-61a0-4eec-8e7d-571522c9f794)
-
-
+<br>&nbsp;
 On mobile:
+
 ![image](https://github.com/user-attachments/assets/82c397f8-f97f-4d52-92c1-8f7becd5ea14)
 
 ## Workshop Preview
@@ -384,17 +389,13 @@ The workshop preview is sectioned off to allow each section to breathe. The prev
 
 On desktop:
 ![image](https://github.com/user-attachments/assets/4699d3eb-cfca-4c57-a00a-e60d6869a30f)
-
-
-
-
+<br>&nbsp;
 On tablet:
+
 ![image](https://github.com/user-attachments/assets/161bf6cb-976c-4d5f-abe1-76a248d72dac)
-
-
-
-
+<br>&nbsp;
 On mobile:
+
 ![image](https://github.com/user-attachments/assets/57b5a7c8-0114-4c1b-938f-a0bbf5895b01)
 
 ## Footer
@@ -403,19 +404,16 @@ The footer is the same on every page and includes links for further information,
 
 On desktop:
 ![image](https://github.com/user-attachments/assets/62b19dc9-be08-4903-930d-d79eccbc1d17)
-
-
-
-
+<br>&nbsp;
 On tablet:
+
 ![image](https://github.com/user-attachments/assets/35eaf8fe-0e23-4773-a8fb-eebf84ed6052)
-
-
-
+<br>&nbsp;
 On mobile:
+
 ![image](https://github.com/user-attachments/assets/e1b1521c-6d5d-4573-b806-7703db774709)
 
-## Gallery Page
+### Gallery Page
 
 All images on the gallery page are spaced evenly in a grid-like format, with the bottom image being the biggest image. When hovering over each picture with a mouse, the image enlarges ever-so-slightly to improve the interaction elements of the website.
 
@@ -423,21 +421,169 @@ On desktop:
 ![image](https://github.com/user-attachments/assets/95c6ad6f-2036-4948-8dfe-88003a3f8a40)
 ![image](https://github.com/user-attachments/assets/73b4bade-ea3b-4f27-b155-49f94dc532cc)
 ![image](https://github.com/user-attachments/assets/3835f7cb-6c77-4d3a-80b9-b2ddf1be8e54)
-
-
-
-
+<br>&nbsp;
 On tablet:
+
 ![image](https://github.com/user-attachments/assets/9eb2c480-56a4-4b93-ad19-acbbed042def)
-
-
-
-
+<br>&nbsp;
 On mobile:
+
 ![image](https://github.com/user-attachments/assets/52571be2-788b-46d5-afa5-817c1295e7d2)
 
+### Events Page
+
+All cards on the events page are spaced evenly and I have used a tiny amount of JavaScript to ensure that the cards are clickable to reveal more data; this has been extensively tested to ensure it works as intended on all screen formats.
+
+On desktop:
+![image](https://github.com/user-attachments/assets/541b21eb-fd26-455d-87a5-503aad940cdb)
+![image](https://github.com/user-attachments/assets/6c756244-aefb-4037-8b10-5b4e1d5dd2f2)
+![image](https://github.com/user-attachments/assets/c47866f5-381f-4288-b6b1-1b0e460225ee)
+![image](https://github.com/user-attachments/assets/cface287-b1e7-4334-a7d6-df01de43fec0)
 
 
+<br>&nbsp;
+On tablet:
+
+![image](https://github.com/user-attachments/assets/d92ac811-e6e1-4485-a437-f8d6efeff549)
+![image](https://github.com/user-attachments/assets/3ae2e2f4-b97e-44f7-9c88-1fdd8bcba0f5)
+
+<br>&nbsp;
+On mobile:
+
+![image](https://github.com/user-attachments/assets/0aa2eddd-6713-4cb3-801f-084e0f1a9674)
+![image](https://github.com/user-attachments/assets/111c0b9e-aa96-45bc-b0b5-fe2f98a9b951)
+
+### Support Page
+
+The support page includes helpful links placed in interactive cards for families to find external support, alongside a contact us form which has a confirmation message when filled in. This contact form is also linked to the 'contact' in the footer as well.
+
+On desktop:
+![image](https://github.com/user-attachments/assets/34e01864-05d6-43b0-84cb-8ccefe5981b1)
+![image](https://github.com/user-attachments/assets/703369a9-1d21-4e9c-986e-e65b1f42a1e6)
+![image](https://github.com/user-attachments/assets/a0e0359d-0d86-42b5-9068-7b14e9e01ee4)
+
+<br>&nbsp;
+On tablet:
+
+![image](https://github.com/user-attachments/assets/5e6ccddb-e72a-480d-8d4f-420d8ecfc732)
+![image](https://github.com/user-attachments/assets/a9672de6-fb54-4491-882b-f0e51609dd7f)
+
+<br>&nbsp;
+On mobile:
+
+![image](https://github.com/user-attachments/assets/8fac7ebe-dd0f-49d2-b2be-df29897d3151)
+![image](https://github.com/user-attachments/assets/819a1288-42db-4499-888a-b3f7863430f6)
+![image](https://github.com/user-attachments/assets/cd78a811-0e13-46aa-b059-efd70b5506a6)
+
+
+### Sign Up Page
+
+The sign up page just contains a form where each box must be filled in and will give a warning if there are any left blank. It features a drop down menu for all the advertised workshops that are currently on and will take the user to a success page upon completion.
+
+On desktop:
+
+![image](https://github.com/user-attachments/assets/1b93d975-3cc0-48f1-9882-53d3be8aa876)
+![image](https://github.com/user-attachments/assets/a26cf6d1-dbc3-4a89-a547-209773177019)
+![image](https://github.com/user-attachments/assets/b4109c77-e12e-43ac-9204-78902ff5fb77)
+
+
+<br>&nbsp;
+On tablet:
+
+![image](https://github.com/user-attachments/assets/8add1d9f-38b7-4a1d-9125-d4e117e83646)
+![image](https://github.com/user-attachments/assets/3f70871f-f30e-4ea1-bbcf-ba1a082296fc)
+
+
+<br>&nbsp;
+On mobile:
+
+![image](https://github.com/user-attachments/assets/9c2c5878-efee-481a-97e9-4b32523e9e92)
+![image](https://github.com/user-attachments/assets/5cf1c2dc-4652-4edb-8c47-8a313a2f92ab)
+![image](https://github.com/user-attachments/assets/5014dc91-a465-4296-b741-23eab63a7a43)
+
+
+### About us Page
+
+The about us page contains a few sentences about what Sprout & Spark believe in followed by 4 images, placed in cards, of the individuals who teach each workshop as well as stating what their skills are.
+
+On desktop:
+![image](https://github.com/user-attachments/assets/81ec47a8-f7b3-4540-911c-8ce515d21e42)
+<br>&nbsp;
+On tablet:
+
+![image](https://github.com/user-attachments/assets/fb88ef3f-5079-4fc2-9f8d-a119f69e393c)
+
+<br>&nbsp;
+On mobile:
+
+![image](https://github.com/user-attachments/assets/74d9e9a1-dc5e-48b9-b503-1081797bd49c)
+![image](https://github.com/user-attachments/assets/aeca670f-857c-4896-9cc2-0c6bb64f7c45)
+
+### FAQs
+
+The FAQs page is mostly a placeholder for now with future improvements in mind. For now, it consists of a simple interactive table for users to click on to reveal answers to questions they may have.
+
+On desktop:
+![image](https://github.com/user-attachments/assets/fd9d04f5-dc5f-4510-a29f-456f06fdd995)
+
+<br>&nbsp;
+On tablet:
+
+![image](https://github.com/user-attachments/assets/988c638d-dfb7-4539-b7ed-2a23ff85b8e8)
+
+<br>&nbsp;
+On mobile:
+
+![image](https://github.com/user-attachments/assets/6e8e4da5-71f9-489c-8d13-89c2edfff75a)
+
+### Reviews
+The reviews page is another placeholder page as ideally it should have stars out of 5 and be played on a carousel integrated on the homepage. However, this will be applied during future updates. For now, reviews are placed in 6 cards for users to have a good idea of what other families think of each workshop. The 'leave a review' button takes the user straight to the contact form on the support page.
+
+On desktop:
+
+![image](https://github.com/user-attachments/assets/833a65e4-65df-4878-9230-3645dffd9fe5)
+
+<br>&nbsp;
+On tablet:
+
+![image](https://github.com/user-attachments/assets/e6bc56ca-b54f-4d41-ad58-95261402f5a0)
+
+<br>&nbsp;
+On mobile:
+
+![image](https://github.com/user-attachments/assets/4da5f60c-c273-492d-bc30-737022037565)
+
+### Fundraise 
+
+The fundraising page tells the user how Sprout & Spark gain funds and supplies to continue running their workshop, with an optional "donate now" button which takes the user to PayPal.
+
+On desktop:
+
+![image](https://github.com/user-attachments/assets/a938934b-2973-4b5a-86b1-7f765e4572f7)
+
+<br>&nbsp;
+On tablet:
+
+![image](https://github.com/user-attachments/assets/564e0b97-9ac7-494a-aab9-ecb4b1a848be)
+
+<br>&nbsp;
+On mobile:
+![image](https://github.com/user-attachments/assets/bd0301ab-7b14-4dd0-b501-907025f82f47)
+
+
+## Features
+
+- Accessible navigation on all pages.
+- Visual, engaging workshops listings.
+- SEN support information for each activity.
+- Easy-to-use booking form.
+- Fully mobile and tablet responsive.
+- Alt-text for all images.
+- Fonts optimized for readability.
+- A complementative colour pallete across all web pages.
+- Links to external websites for further support for families.
+- A gallery updated after each event to encourage website engagement.
+- Links to social media for further visual content such as photos and videos.
 
 
 ## Technologies Used

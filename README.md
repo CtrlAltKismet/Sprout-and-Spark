@@ -46,8 +46,8 @@ Please visit the deployed website [here](https://ctrlaltkismet.github.io/Sprout-
 - [Installation](#installation)
 - [Deployment](#deployment)
 - [Future Features](#future-features)
+- [Bugs and Fixes](#bugs-and-fixes)
 - [Credits](#credits)
-
 
 
 ---
@@ -896,6 +896,7 @@ All dynamic workshop content, form handling, and user reviews are powered by Dja
 - [Image Colour Picker](https://imagecolorpicker.com/) (to find suitable colours for the website)
 - [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) (to validate CSS code)
 - [W3C Validator](https://validator.w3.org/) (to validate HTML pages)
+- [Stack Overflow](https://stackoverflow.com/questions) for troubleshooting 
 - Lighthouse via Dev Tools
 - GitHub Pages (for deployment)
 - Bing AI image generator (for imagery)
@@ -933,8 +934,77 @@ Deployed via GitHub Pages: [Sprout&Spark Homepage](https://ctrlaltkismet.github.
 
 ---
 
+## Bugs and Fixes
+
+### Background of generated image taking up too much space in navbar
+
+This was causing the background colour of the navbar to be much bigger than needed; to fix this, I removed the background of the photo using photoshop and resized the image appropriately with the use of dev tools.
+![image](https://github.com/user-attachments/assets/a4a5be82-8a78-4c84-a03d-b056e3cb59a7)
+
+---
+### Text in navbar too large for smaller screens
+
+On smaller screens, the text in the navbar had forced the background colour to not wrap correctly. This was fixed by ensuring flex-wrap was set to 'wrap' and the displau as flex. I used dev tools again to find an appropriate size for the logo and text on a smaller screen.
+![image](https://github.com/user-attachments/assets/97fdc002-67e4-4795-b037-91cd1d730aaa)
+
+---
+### Boostrap cards forcing cards to appear on left of screen
+
+Using bootstrap cards, each card automatically defaulted to a vertical position, this was fixed with flex (d-flex g-3) to place a gap between each card.
+![image](https://github.com/user-attachments/assets/41185fbc-49e7-4809-9953-0e6f59481b7e)
+
+---
+### Search bar placement on smaller screens
+
+I had to look at Stack Overflow for help with this as the Bootstrap search bar wasn't working. I had learned some JavaSript coding which helped to understand how search bars work within a website. I had used Devtools to check if the code was working as seen in the screenshot below.
+![image](https://github.com/user-attachments/assets/9ed0065b-13c7-407f-b7ee-9d120e86ebf8)
+
+The search bar and mobile needed media queries to adjust the placement of the search bar as well as the initial placement on desktop:
+![image](https://github.com/user-attachments/assets/708a9d6b-e68b-4d81-8be8-d29524336536)
+![image](https://github.com/user-attachments/assets/a503d8a6-5b5a-4370-9227-ce3a1c2e0e67)
+![image](https://github.com/user-attachments/assets/fc4bbeb2-d1db-48f0-8004-43749f4c744e)
+
+Upon attempting to recentre the navigation bar, it would quite freqently overlap my links to the right. 
+
+**Fix:**  
+This was resolved entirely with responsive CSS — no changes were needed to the HTML structure.
+
+**What was done:**
+
+- Applied `position: absolute` and `transform: translateX(-50%)` to center the search bar on large screens (≥1400px).
+- Introduced multiple media queries to:
+  - Reset `position` to `static` for smaller screens (≤1399px).
+  - Allow the search bar to flow naturally beneath or between elements as needed.
+  - Use `order`, `flex-wrap`, and `justify-content` to manage the visual stacking and spacing of elements.
+  - Restrict the `#search-form` width (`max-width: 600px`) to avoid crowding.
+  - Center everything using `margin: auto` and `text-align: center` as fallbacks.
+- Ensured `flex-grow` and `flex-shrink` rules were used to prevent layout distortion across breakpoints.
+
+**Result:**  
+The search form now scales cleanly and repositions itself correctly across all screen sizes, preserving both aesthetic balance and usability.
+
+---
+### Navbar on gallery and index page floating off screen when trying to fix floating footer
+
+**Fix:**
+Used `z-index: 10` to place it above other elements without forcing it to be fixed or absolute. `Position: relative` to anchor the navbar properly against flow.
+
+---
+### White space in cards on gallery which expands when opening each card.
+
+When users clicked the 'more' button on event cards, the additional text expanded, but the card height didn't adjust properly. This caused visible white space under adjacent cards, breaking the layout visually.
+
+**Fix:**
+- Removed `position: absolute` from `.event-more-wrapper`.
+- Let the extra content expand naturally inside the card.
+- Used `max-height` transitions to create a smooth open/close effect (`max-height: 0; overflow:hidden;` by default, then `max-height: 1000px;` when expanded)
+---
+
 ## Credits
 
 - **Fonts** by [Google Fonts](https://fonts.google.com/)  
 - **Images** via Bing AI image creator  
 - Workshops inspired by real-world SEN support needs
+- Spencer_ci (mentor) for much needed advice, such as resizing the images and reminder to use Lighthouse to test each webpage.
+
+

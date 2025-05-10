@@ -35,8 +35,15 @@ Please visit the deployed website [here](https://ctrlaltkismet.github.io/Sprout-
   - [Testing on Other Devices](#testing-on-other-devices)
   - [Testing on Other Browsers](#testing-on-other-browsers)
   - [Dev Tools](#dev-tools)
-
+  - 
+- [Django Functionality](#django-functionality)
+  -[Models](#models)
+  -[Views](#views)
+  -[Templates](#templates)
+  -[Summary](#summary)
+  
 - [Technologies Used](#technologies-used)
+
 - [Installation](#installation)
 - [Deployment](#deployment)
 - [Future Features](#future-features)
@@ -319,7 +326,7 @@ Not all colours have been used but were taken from the hero image for selective 
 ![image](https://github.com/user-attachments/assets/835e8f8d-a4e7-41db-8f22-85f0d89628e4)
 
 
-### Layout & Components
+### Layout and Components
 
 - Card layout for workshop previews on index page, with images to show the user what the room layout will look like on entering the premises.
 - Accesible navigation bar with search bar so users are able to search on the current webpage or other webpages within the website.
@@ -585,6 +592,295 @@ On mobile:
 - A gallery updated after each event to encourage website engagement.
 - Links to social media for further visual content such as photos and videos.
 
+## Mock ups
+
+Here are mock ups on most devices for each page of my website, these were created on [UI dev](https://ui.dev/amiresponsive?url=)
+
+Home page:
+![website-preview](https://github.com/user-attachments/assets/ce5d64c7-df94-488a-ae33-de41c531151e)
+
+Gallery page:
+![Gallery preview](https://github.com/user-attachments/assets/30bbe0ca-3e95-4861-ac37-e8b6c4d6a049)
+
+Events page:
+![Events preview](https://github.com/user-attachments/assets/91630aef-c245-4aff-a0f7-caf2f9fc0c77)
+
+Support page:
+![Support preview](https://github.com/user-attachments/assets/fd7e934a-b71f-4b17-80c2-17a6f7f2b99e)
+
+Sign up page:
+![Sign up Preview](https://github.com/user-attachments/assets/8171327b-4446-4341-9930-0002c64750ea)
+
+About us page:
+![about us preview](https://github.com/user-attachments/assets/2e30572c-7477-4a51-b0af-cd3e87b52434)
+
+FAQs page:
+![FAQs preview](https://github.com/user-attachments/assets/e165a156-4c00-4025-a7f2-b83ce5dfb8bb)
+
+Reviews page:
+![reviews preview](https://github.com/user-attachments/assets/d6874dd4-8417-4b92-9349-04338d7b97c2)
+
+Fundraise page:
+![fundraise preview](https://github.com/user-attachments/assets/b09b8401-0860-4f90-b203-b6a762bce2d6)
+
+## Testing
+
+Throughout this project, I have used a variety of tools to test the websites functionality, contrast, code validation, ensured all 'must-have' user stories are checked, and tested on other physical devices to ensure the website is fully functional on various hardware. Throughout this process, I have corrected and documented a variety of changes based on errors and recommendations.
+
+## Lighthouse
+
+Any lighthouse corrections made for performance was mostly due to the image sizes. As all of my images have been AI generated, their image sizes sometimes exceeded 2MB which impacted performance, I corrected these by resizing them using the paint tool on Microsoft Windows which would bring some files from 2MB down to 70KB. This drastically improved the performance for my website.
+
+Index page:
+![image](https://github.com/user-attachments/assets/726d395d-2031-4f29-856d-67a5f144b479)
+
+Gallery page after changing images from PNG to JPG and resizing:
+![image](https://github.com/user-attachments/assets/a911437b-d0d6-4c96-bbd6-6761dd70f3f8)
+
+Events page after resizing images:
+![image](https://github.com/user-attachments/assets/5e34fadb-ab81-47dc-b0c1-b843a240755e)
+
+Support page:
+![image](https://github.com/user-attachments/assets/eaf8ff3b-534f-4a03-aeb8-6a019a8fbf3f)
+
+Sign up page:
+![image](https://github.com/user-attachments/assets/306d7fda-e91c-4350-9d35-76033ad3afcd)
+
+About us page:
+![image](https://github.com/user-attachments/assets/38fbb0ec-e159-473c-be76-d6ce792fb8be)
+
+FAQs page:
+![image](https://github.com/user-attachments/assets/c3a0ba9c-18c7-4706-a547-1f99fe816381)
+
+Reviews page:
+![image](https://github.com/user-attachments/assets/29dd68df-4bab-4e21-b7f9-125b8e1ed6e5)
+
+Fundraising page:
+![image](https://github.com/user-attachments/assets/45ef8952-70a7-4ae3-a01e-0c4932715792)
+
+## Contrast
+
+Using the 'Wave' extension for Chrome, I tested the contrast for each of my web pages. Due to the nature of my website design and colour choices, no pages came back with any contrast errors due to its simplistic design.
+![image](https://github.com/user-attachments/assets/f7d70716-cf92-43a8-bdad-461c8254be51)
+![image](https://github.com/user-attachments/assets/f8ee4b40-02a9-4472-8b4d-652f6362c39a)
+![image](https://github.com/user-attachments/assets/c6f38b8e-7913-4c29-8091-7fa61b08d5d3)
+![image](https://github.com/user-attachments/assets/0c9e5cc4-f991-4cc0-b1c0-184eec4a6547)
+![image](https://github.com/user-attachments/assets/255629ae-4f1a-4be4-b053-914a9816f8f0)
+![image](https://github.com/user-attachments/assets/a4fe678e-ec98-4b2a-a50e-fce8d4ae0cb4)
+![image](https://github.com/user-attachments/assets/c17e0c58-8551-472c-9528-adc01f2f44ed)
+![image](https://github.com/user-attachments/assets/8d2e8050-0879-4f0f-94e5-762c821211ca)
+![image](https://github.com/user-attachments/assets/e9f4994e-40d3-40d3-9002-bc4a58e1d1da)
+
+## Validation
+
+To validate my code, I used W3C Markup Validation for my HTML code and the W3C CSS validation too. It did come back with some errors which were promptly fixed.
+
+### HTML Validation
+
+Index page:
+The index page came back with 5 errors and 2 warnings, mostly due to duplicate ID's which were fixed by removing and instead using classes -- the custom CSS was also modified to reflect these changes. <section> was also changed to <div> as suggested by the validator.
+![image](https://github.com/user-attachments/assets/3957e298-2061-462e-ac8d-1465fa0e6068)
+
+After changes were made, there were no more errors:
+![image](https://github.com/user-attachments/assets/2d247b47-fdf3-48d5-a49d-e28b4aba665d)
+
+Gallery page:
+The gallery page came with just 2 errors and 1 warning, which was due to unclosed elements and a section lacking a heading. I used the same <div> fix as before to ensure all elements were closed.
+![image](https://github.com/user-attachments/assets/9619bba7-fa4f-42ad-8b1b-4d7e11291fd2)
+
+After changes were made, there were no more errors:
+![image](https://github.com/user-attachments/assets/a6287c3f-fb9d-4352-95ee-ac5454b7dcc6)
+
+Events page:
+The events page showed a total of 26 errors including: the main element must not appear as a descendent of the header element (fixed by moving <main> from beneath the header to above it) duplicate IDs (removed), the end tag <section> seen but a <div> element was still open (closed element with another </div>) and a </header> missing before my <section> which was promptly added.
+![image](https://github.com/user-attachments/assets/e2ba00e7-c864-49f7-b22b-2f8ef6a4929a)
+
+After changes were made, there were no more errors:
+![image](https://github.com/user-attachments/assets/4ef8b5ba-5796-47e3-a38e-ad3e33dc5046)
+
+Support page:
+The support page showed some errors; the main and footer should not appear as a descendent of the header element (fixed by moving the elements around accordingly) and unclosed elements (fixed by closing elements):
+![image](https://github.com/user-attachments/assets/20f23356-cb0d-4c58-be05-6d16da7a8541)
+
+After changes were made, there were no more errors:
+![image](https://github.com/user-attachments/assets/7e300d1a-5e6f-403c-864e-d7763898f698)
+
+Sign up page:
+The sign up page had duplicate IDs , the element of the footer appearing as the descendent of the header element and more unclosed elements. I used the same fixes as before, using the validator to locate which lines these errors had appeared on.
+![image](https://github.com/user-attachments/assets/647ea372-862f-4a49-b8cb-d43f7ee9a72e)
+
+After changes were made, there were no more errors:
+![image](https://github.com/user-attachments/assets/21f67e74-2762-4817-8163-29f504ab3a3f)
+
+Success page:
+There were no errors on the success page:
+![image](https://github.com/user-attachments/assets/4db4f198-64a0-4ca5-bd89-845946625367)
+
+About us page:
+The about us page didn't show any errors in the code:
+![image](https://github.com/user-attachments/assets/413d7ceb-06e2-4dba-9daf-ae631b1ed21c)
+
+FAQs page:
+The FAQs page didn't show any errors in the code:
+![image](https://github.com/user-attachments/assets/2c0a352b-1676-4ad8-8358-9b98af329f8e)
+
+Reviews page:
+The reviews page didn't show any errors in the code:
+![image](https://github.com/user-attachments/assets/838a62f0-f805-47e3-9120-f7089f2874a5)
+
+Fundraising page:
+There were no errors in the code:
+![image](https://github.com/user-attachments/assets/32257d8d-7b66-425d-978c-cf093272369e)
+
+### CSS Validation
+
+Using the W3C CSS Validatin service, my CSS came back with only 1 error. The 31 warnings were due to using CSS variables which cannot be checked due to the interchangeability of these variables. After researching, I had found that this is a warning for the W3C validation service and not for my code. I fixed the error "text-decoration bold" to the appropriate syntax of "font-weight".
+
+![image](https://github.com/user-attachments/assets/3e86073e-1ccd-4aba-8004-a4d6126c4445)
+
+After using the correct syntax, no more errors were found:
+![image](https://github.com/user-attachments/assets/5880cf12-0b4b-4f27-95f9-442b877bf943)
+
+## User Stories Check
+
+To ensure my website had achieved all outcomes, I tracked the progress of my user stories and checked off each checkbox after I had achieved the desired outcome. I could not start the 'should-haves' for the website due to time constraints but have plans to add these in the future. All 'must-have' user stories were completed:
+
+![image](https://github.com/user-attachments/assets/6a530b2e-8687-43c8-9930-97d293fcc97e)
+![image](https://github.com/user-attachments/assets/fe5cc644-089c-43e1-a6c4-745c27055fe4)
+![image](https://github.com/user-attachments/assets/1a97acd8-1fc5-4de4-b21f-a324c5a8168e)
+![image](https://github.com/user-attachments/assets/636a7313-1649-4445-b151-bf9e3569290a)
+![image](https://github.com/user-attachments/assets/43ae6fab-e5ce-473a-acbf-c62ee5c30b9b)
+![image](https://github.com/user-attachments/assets/172562ac-7972-42d9-bcff-a60ef08f50f4)
+![image](https://github.com/user-attachments/assets/9d6d2fca-104a-4bc2-997f-0cbfd968e171)
+![image](https://github.com/user-attachments/assets/6e0a158c-d04b-4f06-a3d1-2393a75796eb)
+
+## Testing on Other Devices
+
+To ensure the website was responsive on other physical devices, I tested the accessibility and functionality of my website on both an iPhone 16 and iPad Pro. The website worked exactly as intended with images appearing instantly and all links functional.
+
+Screenshots taken directly from iPad:
+![IMG_0337](https://github.com/user-attachments/assets/bd11011c-073f-4f8a-92ac-ef6d7e8a323d)
+![IMG_0338](https://github.com/user-attachments/assets/2a17a12d-9356-437f-8bbd-3e138d93b319)
+![IMG_0339](https://github.com/user-attachments/assets/ef77087b-a6e0-4dd8-88e5-428142609529)
+![IMG_0340](https://github.com/user-attachments/assets/480d1bd6-a7bc-4d5a-b69e-9b589e877f83)
+![IMG_0341](https://github.com/user-attachments/assets/ae97fa1a-9810-45e2-964d-1f675872916b)
+![IMG_0342](https://github.com/user-attachments/assets/9510cfe4-36d6-4e11-ab16-e25f727345cb)
+![IMG_0343](https://github.com/user-attachments/assets/0d2364b0-1805-43d5-b4aa-cea9ec91620c)
+![IMG_0344](https://github.com/user-attachments/assets/56cdac2b-f247-4ff0-ba4a-a16dca16cf32)
+![IMG_0345](https://github.com/user-attachments/assets/cc89a2a3-e40c-4011-8b33-b214c8c82b43)
+![IMG_0350](https://github.com/user-attachments/assets/2bf2731a-fe82-47d2-8e98-ce35c8f6af0b)
+![IMG_0349](https://github.com/user-attachments/assets/39f09422-203e-4cc8-9f10-01a62669f676)
+![IMG_0348](https://github.com/user-attachments/assets/cb0a1ed2-562d-4c43-be21-80c306f3a6ea)
+![IMG_0347](https://github.com/user-attachments/assets/4afd445c-63bd-4356-b2e9-0e6ab417eb79)
+![IMG_0346](https://github.com/user-attachments/assets/aaeb6625-c85b-439c-95f7-c51f5cc89744)
+
+Screenshots taken directly from iPhone:
+![IMG_2551](https://github.com/user-attachments/assets/92db3ff8-2597-439f-bf1c-8e9fbd48af8c)
+![IMG_2550](https://github.com/user-attachments/assets/963d63dd-91f0-4d31-8875-8efcead56fd0)
+![IMG_2549](https://github.com/user-attachments/assets/7ce1c4ef-563d-4b71-bde8-48e58f3c63c8)
+![IMG_2548](https://github.com/user-attachments/assets/06828283-5500-44f0-90f1-5004c3ba764d)
+![IMG_2547](https://github.com/user-attachments/assets/e159dd38-f938-4f01-8396-70c26b06345b)
+![IMG_2546](https://github.com/user-attachments/assets/dd6cf71c-ffcc-4e9a-845f-0909a8ebad92)
+![IMG_2545](https://github.com/user-attachments/assets/6c752797-e362-4da9-96f8-3bc6a1680776)
+![IMG_2544](https://github.com/user-attachments/assets/0476357f-1bec-4b83-b913-6ce3dbe2298c)
+![IMG_2543](https://github.com/user-attachments/assets/755de3cf-ca40-4004-a594-6d49fdf830c5)
+![IMG_2542](https://github.com/user-attachments/assets/e0a134f6-e12e-4826-a509-4204b7f705bf)
+![IMG_2541](https://github.com/user-attachments/assets/1c8a7400-4ce8-4179-ab69-315bc25b4d2b)
+![IMG_2540](https://github.com/user-attachments/assets/a9d78435-52cc-4bdf-817c-e06b4b15bd3d)
+![IMG_2539](https://github.com/user-attachments/assets/62683662-a63b-4cd0-8a02-e00e239b17f2)
+![IMG_2538](https://github.com/user-attachments/assets/b10c75df-f201-4090-a91e-aa2bac91298d)
+![IMG_2537](https://github.com/user-attachments/assets/0614e646-060b-422c-ad40-b0d506f09997)
+![IMG_2536](https://github.com/user-attachments/assets/6a04ea95-4e85-4d06-b44c-7c1fa96a2fd1)
+![IMG_2535](https://github.com/user-attachments/assets/7e0bfdc5-73b9-4c69-b5fa-9b4e59c6a171)
+![IMG_2534](https://github.com/user-attachments/assets/f1767944-65ca-4a2a-857a-bbaf3eabce46)
+![IMG_2533](https://github.com/user-attachments/assets/a257c4ed-893d-43e6-bb1e-51e722f6eb2f)
+![IMG_2532](https://github.com/user-attachments/assets/cde8a9a4-119e-49cb-971a-624324f0efbb)
+![IMG_2531](https://github.com/user-attachments/assets/64d75da1-4bb4-4820-ac66-8f20fe1de834)
+![IMG_2530](https://github.com/user-attachments/assets/1a6fc0fa-d75d-48bf-94f7-ea0d9289ef47)
+![IMG_2529](https://github.com/user-attachments/assets/40e2b675-f59b-4587-8c56-6b2a1c415245)
+![IMG_2528](https://github.com/user-attachments/assets/236441db-cfb6-4ce9-82de-84b0b17634c0)
+![IMG_2527](https://github.com/user-attachments/assets/73e0551c-48b2-4cbc-b84f-7a8d67540864)
+
+
+## Testing on Other Browsers
+
+To ensure each page works as it should with the correct font and design, I tested each web page on a few browser. It was already tested on Chrome as that was the primary browser I used while coding, but I also tested it on Microsoft Edge, FireFox, and used Brave due to that browser in particular not being as well known as the usual web browsers we tend to use. There were no changes to the websites layout and all fonts and images appear as should as can be seen in the screenshots shown below.
+
+Edge testing:
+![image](https://github.com/user-attachments/assets/6e17e0dc-01e4-47d4-924f-8ea2382fc80f)
+![image](https://github.com/user-attachments/assets/669b4d52-5f3d-4ef4-9120-1d98d0f2e05e)
+![image](https://github.com/user-attachments/assets/7c98cb72-51ca-4c81-bf06-453dc17d9e20)
+![image](https://github.com/user-attachments/assets/4ee945bb-8ed1-4c8a-a110-81c3da32e75f)
+![image](https://github.com/user-attachments/assets/3e0d50f6-475a-46ce-a2ca-d519b3786a33)
+![image](https://github.com/user-attachments/assets/fca7aa48-da02-4a36-bc86-c54ffcbd9333)
+![image](https://github.com/user-attachments/assets/eacd8145-fdc4-4ca1-92d0-5180f6d5ce34)
+![image](https://github.com/user-attachments/assets/d947f0ef-f172-4b8e-948e-628c21123894)
+![image](https://github.com/user-attachments/assets/f4f29580-40ec-4f23-9026-af82f5efb36c)
+
+FireFox testing:
+![image](https://github.com/user-attachments/assets/a3906f74-a465-4c71-a803-28481c08dcd1)
+![image](https://github.com/user-attachments/assets/d0ea6625-7665-4459-8ff4-f657e337192c)
+![image](https://github.com/user-attachments/assets/b0c5959c-d694-49f4-a76d-aab5904a9aac)
+![image](https://github.com/user-attachments/assets/4c2e213d-a027-47dc-927c-20b26fad59dc)
+![image](https://github.com/user-attachments/assets/ff160e79-9177-4358-9d10-3a2ed66a7173)
+![image](https://github.com/user-attachments/assets/1d43b75a-b861-4707-9023-3c23c88a2d3d)
+![image](https://github.com/user-attachments/assets/12f04c29-b127-47e2-88d0-df0e2f5af947)
+![image](https://github.com/user-attachments/assets/a3ea256c-ea9f-4ded-afe5-92656bcb5227)
+![image](https://github.com/user-attachments/assets/6c13d2b7-f656-4ebf-8657-585919691a35)
+
+Brave testing:
+![image](https://github.com/user-attachments/assets/fba6b1ca-3683-4307-81f4-46ce52a21676)
+![image](https://github.com/user-attachments/assets/374b0280-b5cc-4925-9027-07856a281626)
+![image](https://github.com/user-attachments/assets/f0ff376f-d308-457f-bb78-8e048cd71ceb)
+![image](https://github.com/user-attachments/assets/c7a7da73-299f-47de-908c-6a2490892388)
+![image](https://github.com/user-attachments/assets/74073021-18a3-489f-a089-b387226591ee)
+![image](https://github.com/user-attachments/assets/5e89972a-6d1c-4871-be4e-edda498c3d7d)
+![image](https://github.com/user-attachments/assets/0de66064-2031-4e01-8608-d7cdda1451a0)
+![image](https://github.com/user-attachments/assets/7f77fbfa-a5ca-4fa0-aac7-b87c60ca7860)
+![image](https://github.com/user-attachments/assets/8b6ba4bf-e167-4527-9be3-b2ad0cf8100e)
+
+
+## Django Functionality
+
+Sprout & Spark uses Django to manage the dynamic content and functionality of the website, following the Model-View-Template (MVT) pattern. The site integrates Django models, views, and templates to ensure data is handled cleanly and presented effectively to users.
+
+### Models
+
+Django models are used to structure and manage the core data used by the website. Each model represents a key piece of functionality:
+
+- **Workshop model**: Stores details about each event, including `title`, `description`, `date`, `category`, and `is_fully_booked`. This allows events to be added, updated, and displayed dynamically.
+- **Booking model**: Handles the form submissions when users sign up for a workshop. It collects the `child’s name`, `age`, `parent contact info`, and the selected `workshop`. This ensures registration data is stored and manageable.
+- **Review model**: Captures feedback from families who have attended events. It includes a `name`, `review text`, and a `date_created` field, helping to build trust with future users.
+
+These models help keep all data-handling logic inside Django’s backend, separate from the display logic used in templates.
+
+### Views
+
+Django views act as the link between the models and templates. They retrieve relevant data from the database and pass it into the templates to be rendered. For example:
+
+- The **events view** fetches all `Workshop` objects and displays them in cards on the events page.
+- The **booking view** handles both displaying the registration form and saving submitted data to the `Booking` model.
+- The **reviews view** pulls all `Review` objects from the database and passes them to the reviews page for display.
+
+Business logic such as filtering events or handling form success messages is kept in the views, not the templates, in line with Django best practices.
+
+### Templates
+
+The templates use Django’s built-in template language to loop through and display dynamic content. For example:
+
+- The **events page** template loops through workshops passed from the view to display each one in a structured layout.
+- The **reviews page** template uses a for loop to render each user-submitted review inside a styled card.
+- Conditional logic is used in templates (e.g., showing a message if a workshop is fully booked) while keeping data processing in views and models.
+
+### Summary
+
+This separation of concerns between models (data), views (logic), and templates (display) ensures the project is:
+
+- Easy to update and maintain  
+- Scalable as more features are added  
+- In line with Django’s recommended approach to development
+
+All dynamic workshop content, form handling, and user reviews are powered by Django’s backend logic, providing a consistent and efficient user experience.
 
 ## Technologies Used
 
@@ -598,6 +894,9 @@ On mobile:
 - Lighthouse via Dev Tools
 - GitHub Pages (for deployment)
 - Bing AI image generator (for imagery)
+- Wave (Chrome extension)
+- Google Chrome, Microsoft Edge, FireFox, Brave (for website testing)
+- iPhone 16 and iPad Pro (12.9-inch) (5th generation) (used for testing website on physical devices)
 
 ---
 

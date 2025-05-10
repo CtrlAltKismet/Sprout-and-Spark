@@ -1,5 +1,8 @@
 # Sprout & Spark
 
+![website-preview](https://github.com/user-attachments/assets/edb750fd-211a-423a-9c40-c3e265ffc827)
+
+
 This fictional website is designed for children and their families to find creative and interesting workshops for their SEN children to attend, socialise, create and be a part of a safe space for all their learning needs. 
 
 Required: HTML, CSS 
@@ -10,10 +13,12 @@ Please visit the deployed website [here](https://ctrlaltkismet.github.io/Sprout-
 ## Contents
 
 - [UX/UI](#uxui)
+- [Strategy](#strategy)
 - [Features](#features)
 - [User Stories](#user-stories)
-- [Design Choices](#design-choices)
+- [Site Structure](#site-structure)
 - [Wireframes](#wireframes)
+- [Design Choices](#design-choices)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [Deployment](#deployment)
@@ -60,6 +65,18 @@ The parents of these children should be able to access the website accordingly a
 - To future-proof with modular content such as a calendar and videos.
 
 ---
+
+## Strategy
+
+The Sprout & Spark website is designed to support and informa families of children with Special Education Needs (SEN) by showcasing the free creative workshops the organisation offers. These workshops will focus on inclusive, hands-on activities such as painting, clay modelling, and wood carving to help children build motor skills, express themselves creatively, and improve social interaction. The website aims to serve both new and returning families by providing clear, accessible information about the sessions, the support network available, and the positive mpact these activities can have on wellbeing.
+
+Visitors will be bale to explore workshop details, meet the facilitators, and see photo examples of past activities to get a sense of what to expect. Practical features like contact forms, intuitive interactivity and layouts, and accessible information will help families plan their visit with confidence. Accessibility is key priority, so the website will use inclusive design principles -- such as a neurodiverse-friendly layout and colour scheme with high contrast, readable fonts (Lexend and Roboto), and alt text fror images -- to ensure it meets the needs of a wide audience.
+
+Social media links will also be included to keep users informed about upcoming events and ongoing fundraising efforts. Testimonials from participating families will provide reassurance and insight into the experience, helping to build trust and encourage new visitors to get involved.
+
+The fictional organisers behind Sprout & Spark would find this website valuable not only as a promotional tool but as a means to connect with the community, grow their reach, and secure ongoing support. By making the information welcoming, easy to navigate, and visually calm, the website becomes a reliable resource for those seeking creative and supportive environments for their children.
+
+The main audience includes parents and carers of children with SEN, educators, and community supporters who wish to learn more, get involved, or donate to help sustain the service.
 
 ## Features
 
@@ -214,6 +231,62 @@ The parents of these children should be able to access the website accordingly a
 - Embed a video in a prominent place on the site.
 - Add captions or brief text alongside to explain the activity.
 
+
+---
+
+## Site Structure
+
+The *Sprout & Spark* website has a consistent and user-friendly layout, following the same colour scheme off an off-white and blue with red accent colours. There are key navigation links located in the sticky navigation bar at the top of every page, which utilises a hamburger icon on smaller screens. The website logo, which is also located in the navigation bar, can be clicked at any time to return the user to the homepage.
+
+1. The **home page** can be accessed by clicking the first link in the navigation bar. This page introduces visitors to Sprout & Spark, explaining the purpose of the workshops, and highlights the inclusive values of the business. It provides a welcoming overview of what families can expect with appealing images to further provide a warm and welcoming environment for the user. There are cards located near the footer of the page with buttons which can be clicked to take the user to the events page. Like all buttons on the website, they have a hover effect on computers which turn red, once again utilising perfect contrast and accessibility for the user.
+   
+2. The **gallery page** can be accessed by clicking the second link in the navigation bar. this page showcases a variety of images from past workshops, helping users get a visual feel for the creative activities offered and the engaging environment provided for children with SEN. The images provided are inclusive and diverse, showcasing families of different cultural backgrounds so all families feel welcome and involved within the community.
+   
+3. The **events page** can be accessed by clicking the third link in the navigation bar. This page provides information about upcoming workshops including; dates, times, recommended ages, duration of event and group size. Key details also include accessibility features and location support for each individual event.
+
+4. The **support page** can be accessed by clicking the fouth link in the navigation bar. This page offers information about different types of support available for both children and their parents or carers, as well as signposting to additional services and networks.
+
+5. The **sign up page** can be accessed by clicking the fifth and final link in the navigation bar. This page allows users to resgister interest in upcoming workshops, providing an easy way to book a place or contact the business with general query's. All fields on the contact form must be filled out and the user is taken to a success page to confirm their form submission.
+
+6. The **about us page** can be accessed by clicking the first link in the footer. This page shares its mission and mentions how donations and fundraising efforts help keeps the charity alive. This page includes images of each person who runs Sprout & Spark and briefly states what their role is for the charity.
+
+7. The **contact us page** can be accessed by clicking the second link in the footer. This takes the user to the contact form on the support page.
+
+8. The **FAQs page** can be accessed by clicking the third link in the footer. This page answers common questions that families may have about accessibility, age ranges, workshop structure and how to get involved.
+
+9. The **reviews page** can be accessed by clicking the fourth link in the footer. This page features testimonials from families who have attended previous workshops, helping to build trust and encourage new visitors to take part.
+
+10. The **fundraise page** can be accessed by clicking the fifth link in the footer. This page explains how Sprout & Spark is funded and includes a link to donate to the business via PayPal as well as accepting donated supplies and partnering with businesses for support.
+
+
+![Website Structure chart](https://github.com/user-attachments/assets/7f39a4e3-c190-47b3-a1c5-59f1756f4c8a)
+
+---
+
+## Wireframes
+
+Balsamiq was used to generate each wireframe. (please note: the wireframes for the footer links were not generated as they were initially intended to be placeholders)
+
+Index page:
+![Index Page Wireframe](https://github.com/user-attachments/assets/8ccdf390-3c81-4018-9e17-418864cd1bf6)
+
+Gallery Page:
+![Gallery Page Wireframe](https://github.com/user-attachments/assets/aee6fdfe-9d69-46ec-9f26-7bb84a0dab34)
+
+Events page:
+![Events Page Wireframe](https://github.com/user-attachments/assets/d88f2683-ee78-4381-a7eb-79d39f04ab11)
+
+Support page:
+![Support Page Wireframe](https://github.com/user-attachments/assets/7cb457fd-7766-4671-a950-f4ef271c61ef)
+
+Sign up page:
+![Sign Up Page Wireframe](https://github.com/user-attachments/assets/e51854bf-7d56-4885-81ac-6f76d1492079)
+
+
+Note: There were minor discrepencies in the layout between the wireframes and when coding the website. These discrepencies made the website look better and more intuitive. 
+
+---
+
 ## Design Choices
 
 ### Fonts
@@ -221,7 +294,11 @@ The parents of these children should be able to access the website accordingly a
 As the website boasts inclusivity for SEN children, it is important to choose a font that is readable for children with dyslexia or Irlen's Syndrome. As Open Dyslexia is unavailable on Google Fonts, research suggests Lexend to be the next best font for readability.
 
 - **Lexend** - Primary font, chosen for its accessibility and readability benefits.
+![image](https://github.com/user-attachments/assets/e4fcdd73-b963-45e6-abe0-381c625d4421)
+
 - **Roboto** - Backup font for modern, clean support.
+![image](https://github.com/user-attachments/assets/51b05419-1a75-4e8b-afac-3aecd1440d71)
+
 
 Fonts for headers and navbar links have been either put in bold or capitalised to enhance readability, with suitable spacing within the navbar to ensure all components can be easily read and understood with younger eyes.
 
@@ -231,7 +308,8 @@ Not all colours have been used but were taken from the hero image for selective 
 
 - Soft, friendly colours chosen to be welcoming and sensory-considerate.
 - High contrast for readability, without stimulaton.
-- ![image](https://github.com/user-attachments/assets/835e8f8d-a4e7-41db-8f22-85f0d89628e4)
+
+![image](https://github.com/user-attachments/assets/835e8f8d-a4e7-41db-8f22-85f0d89628e4)
 
 
 ### Layout & Components
@@ -244,16 +322,121 @@ Not all colours have been used but were taken from the hero image for selective 
 - Many pictures have been placed throughout the index page to keep it as eye catching as possible and keep it user friendly for younger audiences.
 - Text has large gaps between each section to ensure readability for audiences with dyslexia/Irlens.
 - A logo has been used instead of text in the navbar as images are much more recognisable and users can immediately recognise the company.
- 
----
 
-## Wireframes
+## Homepage
 
-![Index Page Wireframe](https://github.com/user-attachments/assets/8ccdf390-3c81-4018-9e17-418864cd1bf6)
-![Gallery Page Wireframe](https://github.com/user-attachments/assets/aee6fdfe-9d69-46ec-9f26-7bb84a0dab34)
-![Events Page Wireframe](https://github.com/user-attachments/assets/d88f2683-ee78-4381-a7eb-79d39f04ab11)
-![Support Page Wireframe](https://github.com/user-attachments/assets/7cb457fd-7766-4671-a950-f4ef271c61ef)
-![Sign Up Page Wireframe](https://github.com/user-attachments/assets/e51854bf-7d56-4885-81ac-6f76d1492079)
+### Navigation Bar
+
+On desktop, the navigation bar remains at the top of the website at all times. The logo is located on the left, with a search bar in the middle, mostly as a placeholder for a functioning searchbar, and links on the right. Each link turns red when highlighted and the logo always links back to the homepage.
+
+Navigation bar on desktop:
+![image](https://github.com/user-attachments/assets/3d01a997-c160-4245-b76f-0b0b5235d490)
+
+
+
+Navigation bar on tablet devices with hamburger icon and drop down menu:
+
+![image](https://github.com/user-attachments/assets/bae60a67-7da1-4e82-8f80-914637992d9a)
+![image](https://github.com/user-attachments/assets/ddfc91a8-d5ae-470d-b6bb-99e5b7753804)
+
+
+
+Navigation bar on mobile devices with hamburger icon and drop down menu:
+
+![image](https://github.com/user-attachments/assets/5584650f-466f-40e8-8ffb-d2e02fc12c73)
+![image](https://github.com/user-attachments/assets/0e7b2c88-d6f5-4087-9cf3-c8f66baf27d9)
+
+## Hero Image
+
+The hero image used is where the primary colour of light blue comes from, using a colour picker service such as imagecolorpicker.com. On desktop, the image primarily focuses on the boy and what he is doing. However, the image will scale on smaller devices such as on mobile the entire picture can be seen clearly. The image is also styled with a shadow beneath it to make it pop out more from the page.
+
+On desktop:
+![image](https://github.com/user-attachments/assets/9dd9b0ba-e179-463c-a545-044051b1e5ee)
+
+
+
+On tablet:
+![image](https://github.com/user-attachments/assets/b5fee6ae-7b83-42e7-8b73-c615d1c86dac)
+
+
+
+On mobile:
+![image](https://github.com/user-attachments/assets/dc0daf1a-3d63-4503-a527-ec6afe571dd6)
+
+## Introduction
+
+The introduction on this page includes another image on the right hand side alongisde some text to introduce the user to the website. The address and phone number is also included in this section.
+
+On desktop:
+![image](https://github.com/user-attachments/assets/82016b4e-5b2a-47a3-9073-e02e1b92a97b)
+
+
+On tablet:
+![image](https://github.com/user-attachments/assets/84251776-61a0-4eec-8e7d-571522c9f794)
+
+
+On mobile:
+![image](https://github.com/user-attachments/assets/82c397f8-f97f-4d52-92c1-8f7becd5ea14)
+
+## Workshop Preview
+
+The workshop preview is sectioned off to allow each section to breathe. The previews are placed in cards which gives a brief, one-sentence overview and includes buttons which can take the user straight to the events page.
+
+On desktop:
+![image](https://github.com/user-attachments/assets/4699d3eb-cfca-4c57-a00a-e60d6869a30f)
+
+
+
+
+On tablet:
+![image](https://github.com/user-attachments/assets/161bf6cb-976c-4d5f-abe1-76a248d72dac)
+
+
+
+
+On mobile:
+![image](https://github.com/user-attachments/assets/57b5a7c8-0114-4c1b-938f-a0bbf5895b01)
+
+## Footer
+
+The footer is the same on every page and includes links for further information, all with the same red hover affect as other links and buttons on the web page. The functional social media icons have been enlarged and spaced out which makes it easier for mobile and tablet users to click on. (Note: to protect the privacy of children and the nature of this topic, all images on the website have been AI generated using Bing Image Creator).
+
+On desktop:
+![image](https://github.com/user-attachments/assets/62b19dc9-be08-4903-930d-d79eccbc1d17)
+
+
+
+
+On tablet:
+![image](https://github.com/user-attachments/assets/35eaf8fe-0e23-4773-a8fb-eebf84ed6052)
+
+
+
+On mobile:
+![image](https://github.com/user-attachments/assets/e1b1521c-6d5d-4573-b806-7703db774709)
+
+## Gallery Page
+
+All images on the gallery page are spaced evenly in a grid-like format, with the bottom image being the biggest image. When hovering over each picture with a mouse, the image enlarges ever-so-slightly to improve the interaction elements of the website.
+
+On desktop:
+![image](https://github.com/user-attachments/assets/95c6ad6f-2036-4948-8dfe-88003a3f8a40)
+![image](https://github.com/user-attachments/assets/73b4bade-ea3b-4f27-b155-49f94dc532cc)
+![image](https://github.com/user-attachments/assets/3835f7cb-6c77-4d3a-80b9-b2ddf1be8e54)
+
+
+
+
+On tablet:
+![image](https://github.com/user-attachments/assets/9eb2c480-56a4-4b93-ad19-acbbed042def)
+
+
+
+
+On mobile:
+![image](https://github.com/user-attachments/assets/52571be2-788b-46d5-afa5-817c1295e7d2)
+
+
 
 
 
@@ -263,6 +446,10 @@ Not all colours have been used but were taken from the hero image for selective 
 - [Google Fonts](https://fonts.google.com/) (Lexend & Roboto)
 - [Bootstrap](https://getbootstrap.com/) (for navbar and cards -- see comments in code)
 - [Font Awesome](https://fontawesome.com/) (for icons)
+- [Image Colour Picker](https://imagecolorpicker.com/) (to find suitable colours for the website)
+- [W3C CSS Validation](https://jigsaw.w3.org/css-validator/) (to validate CSS code)
+- [W3C Validator](https://validator.w3.org/) (to validate HTML pages)
+- Lighthouse via Dev Tools
 - GitHub Pages (for deployment)
 - Bing AI image generator (for imagery)
 

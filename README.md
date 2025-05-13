@@ -34,12 +34,6 @@ Please visit the deployed website [here](https://ctrlaltkismet.github.io/Sprout-
   - [User Stories Check](#user-stories-check)
   - [Testing on Other Devices](#testing-on-other-devices)
   - [Testing on Other Browsers](#testing-on-other-browsers)
-    
-- [Django Functionality](#django-functionality)
-  - [Models](#models)
-  - [Views](#views)
-  - [Templates](#templates)
-  - [Summary](#summary)
   
 - [Technologies Used](#technologies-used)
 
@@ -576,6 +570,12 @@ On tablet:
 On mobile:
 ![image](https://github.com/user-attachments/assets/bd0301ab-7b14-4dd0-b501-907025f82f47)
 
+### 404
+
+A 404 page has also been added to the website in case the wrong URL was inputted into the search bar.
+![image](https://github.com/user-attachments/assets/06834d18-43cd-4f13-b7c7-3c8a0244ac56)
+
+
 
 ## Features
 
@@ -844,48 +844,6 @@ Brave testing:
 ![image](https://github.com/user-attachments/assets/7f77fbfa-a5ca-4fa0-aac7-b87c60ca7860)
 ![image](https://github.com/user-attachments/assets/8b6ba4bf-e167-4527-9be3-b2ad0cf8100e)
 
-
-## Django Functionality
-
-Sprout & Spark uses Django to manage the dynamic content and functionality of the website, following the Model-View-Template (MVT) pattern. The site integrates Django models, views, and templates to ensure data is handled cleanly and presented effectively to users.
-
-### Models
-
-Django models are used to structure and manage the core data used by the website. Each model represents a key piece of functionality:
-
-- **Workshop model**: Stores details about each event, including `title`, `description`, `date`, `category`, and `is_fully_booked`. This allows events to be added, updated, and displayed dynamically.
-- **Booking model**: Handles the form submissions when users sign up for a workshop. It collects the `child’s name`, `age`, `parent contact info`, and the selected `workshop`. This ensures registration data is stored and manageable.
-- **Review model**: Captures feedback from families who have attended events. It includes a `name`, `review text`, and a `date_created` field, helping to build trust with future users.
-
-These models help keep all data-handling logic inside Django’s backend, separate from the display logic used in templates.
-
-### Views
-
-Django views act as the link between the models and templates. They retrieve relevant data from the database and pass it into the templates to be rendered. For example:
-
-- The **events view** fetches all `Workshop` objects and displays them in cards on the events page.
-- The **booking view** handles both displaying the registration form and saving submitted data to the `Booking` model.
-- The **reviews view** pulls all `Review` objects from the database and passes them to the reviews page for display.
-
-Business logic such as filtering events or handling form success messages is kept in the views, not the templates, in line with Django best practices.
-
-### Templates
-
-The templates use Django’s built-in template language to loop through and display dynamic content. For example:
-
-- The **events page** template loops through workshops passed from the view to display each one in a structured layout.
-- The **reviews page** template uses a for loop to render each user-submitted review inside a styled card.
-- Conditional logic is used in templates (e.g., showing a message if a workshop is fully booked) while keeping data processing in views and models.
-
-### Summary
-
-This separation of concerns between models (data), views (logic), and templates (display) ensures the project is:
-
-- Easy to update and maintain  
-- Scalable as more features are added  
-- In line with Django’s recommended approach to development
-
-All dynamic workshop content, form handling, and user reviews are powered by Django’s backend logic, providing a consistent and efficient user experience.
 
 ## Technologies Used
 

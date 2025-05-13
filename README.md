@@ -590,6 +590,7 @@ A 404 page has also been added to the website in case the wrong URL was inputted
 - Links to external websites for further support for families.
 - A gallery updated after each event to encourage website engagement.
 - Links to social media for further visual content such as photos and videos.
+- A link to the homepage attached to the navbar logo for ease of use.
 
 ## Mock ups
 
@@ -914,7 +915,7 @@ Using bootstrap cards, each card automatically defaulted to a vertical position,
 ---
 ### Search bar placement on smaller screens
 
-I had to look at Stack Overflow for help with this as the Bootstrap search bar wasn't working. I had learned some JavaSript coding which helped to understand how search bars work within a website. I had used Devtools to check if the code was working as seen in the screenshot below.
+I had to look at Stack Overflow for help with this as the Bootstrap search bar wasn't working. I had learned some JavaSript coding which helped to understand how search bars work within a website. I had used Devtools to check if the code was working as seen in the screenshot below. The searchbar is fully functional, however, it requires a live server (or live website connected to a server) to support this, GitHub pages in itself will not allow the searches to be fully functional.
 ![image](https://github.com/user-attachments/assets/9ed0065b-13c7-407f-b7ee-9d120e86ebf8)
 
 The search bar and mobile needed media queries to adjust the placement of the search bar as well as the initial placement on desktop:
